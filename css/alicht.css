@@ -276,9 +276,9 @@ form button,
 form input[type="submit"] {
     font-size: 80%;
     text-transform: uppercase;
-    padding: .5em 1em .2em !important;
+    padding: .5em 1em .4em !important;
     font-weight: 800;
-    line-height: 1.8;
+    line-height: 1.7;
 }
 
 .button,
