@@ -39,7 +39,7 @@
 body {
     background: #111 url('img/noise.png') fixed repeat right bottom;
     color: #ddd;
-    font: 13pt 'ExoRegular', monospace;
+    font: 13pt 'Exo', monospace;
     margin: 60px 0 0;
     padding: 0;
 }
@@ -163,7 +163,8 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 h1 {
-    font-family: "ExoLight", monospace;
+    font-family: "Exo", monospace;
+    font-weight: 300;
     color: #27DCE9;
     font-size: 40pt;
 }
@@ -256,6 +257,7 @@ form textarea {
     border: 1px solid #2a2a2a;
     border-radius: 3px;
     font-size: 100%;
+    font-family: "Exo", monospace;
     color: #dedede;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
     -webkit-transition: all ease .2s;
@@ -275,6 +277,7 @@ form textarea:focus {
 form button,
 form input[type="submit"] {
     font-size: 80%;
+    font-family: "Exo", monospace;
     text-transform: uppercase;
     padding: .5em 1em .4em !important;
     font-weight: 800;
@@ -324,7 +327,7 @@ footer{
     margin: 120px 0 50px;
     text-align: center;
     color: #666;
-    font-family: 'ExoRegular', monospace;
+    font-family: 'Exo', monospace;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
 }
 footer a{
