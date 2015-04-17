@@ -2,46 +2,70 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Archost.eu - open-minded web hosting.">
+    <meta name="description" content="Alicht CSS style">
     <link rel="stylesheet" href="css/alicht.css">
-    <title>Archost.eu &mdash; open-minded web hosting.</title>
+    <title>Alicht CSS style</title>
 </head>
 <body>
+
 <header>
     <div>
         <a href="#"><div id="logo" class="full">Archost</div></a>
+        <nav>
+            <li><a href="#cards">Card layout</a></li>
+            <li><a href="#forms">Forms</a></li>
+        </nav>
     </div>
 </header>
 
 <section>
-    <h1>The Card-Layout</h1>
+    <h1 id="cards">The Card layout</h1>
+
+    <p>We use a simple card layout, powered by CSS Flexboxes.<br>
+    In the inner layout, insert a div <code>.card-bg</code>, in which will be arranged the cards <code>.card</code></p>
 
     <div class="card-bg">
         <div class="card boxed">
-            <h2>About the Project</h2>
-            <p>It's a community-driven, free price web hosting platform for the cool kids.</p>
-            <p>Our servers are powered by free, open-source software and financed by donations only, so you won't find any ads here.</p>
-            <p>We aim to provide secure and transparent communication tools (e.g., email, web space, XMPP) for our various users who will be part of a community of open web enthusiasts and other awesome fellows.</p>
+            <h2>This is a <code>.card.boxed</code> card</h2>
+            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
         </div>
 
         <div class="card">
-            <h2>Get a Beta Account</h2>
-            <p>We're still a mess, but we opened the pre-registrations for beta accounts.</p>
-            <p><a class="button" href="#"><strong>Sign up for a beta account</strong> <span class="octicon octicon-chevron-right"></span></a></p>
+            <h2>A simpler card</h2>
+            <p>This is a simpler card, that has a transparent background, because it only has the <code>.card</code> class.</p>
+            <p>Add the <code>.boxed</code> class to make it look like it is inside a nice floating card.</p>
+            <p>Also, you can add the <code>.wide</code> class to a <code>.card</code> if you want it to always fill the whole line.</p>
+            <p><a class="button" href="#"><strong>That's a button!</strong> <span class="octicon octicon-chevron-right"></span></a></p>
         </div>
 
+        <div class="card wide">
+            <h2>That's a <code>.card.wide</code> card…</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+        </div>
+
+        <div class="card boxed wide">
+            <h2>… but this is a <code>.card.boxed.wide</code> one</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+        </div>
     </div>
 </section>
 
 <section>
-    <h1>Forms</h1>
+    <h1 id="forms">Forms</h1>
+
+    <p>Forms also use Flexboxes, just like the card layout.<br>
+    It makes responsive designed forms easy to create and to set up.</p>
+
+
     <div class="card-bg">
         <div class="card boxed wide">
             <h2>A Signup form</h2>
             <form method="post" action="?q=signup">
                 <input type="text" name="username" placeholder="Cool username..." required>
                 <input type="email" name="email" placeholder="Your email..." required>
-                <input type="submit" value="Send">
+                <button type="submit">Send</button>
             </form>
         </div>
 
@@ -50,8 +74,8 @@
             <form method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea type="email" name="email" placeholder="Type in your comment"></textarea>
-                <input type="submit" value="Send">
+                <textarea type="email" name="comment" placeholder="Type in your comment"></textarea>
+                <button type="submit">Send comment</button>
             </form>
         </div>
     </div>
