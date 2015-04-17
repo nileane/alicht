@@ -1,9 +1,242 @@
 /*
- * Alicht
- * https://github.com/archost/alicht
- * Copyright (c) 2015 William Dorffer [:schoewilliam]
- * MIT License
+ * alicht,
+ * a cool CSS3 theme for Archost by William Dorffer [:schoewilliam]
+ *
+ * SUMMARY:
+ *
+ * 0. Imports
+ * 1. General declarations / Body
+ * 2. Outer layout
+ * 3. Global header
+ * 4. Headings/Headlines
+ * 5. Cards-Layout / Inner Layout
+ * 6. Forms & Buttons
+ * 7. Footer
+ *
+ *
+ *
+ */
+
+
+
+/*
+ * 0. Imports
+ * ----------
+ */
+
+@import url('fonts/exo/exo.css');
+@import url('fonts/octicons/octicons.css');
+
+
+
+/*
+ * 1. General declarations / Body
+ * ------------------------------
  */
 
 body{
+    background:#111 url('img/noise.png') fixed repeat right bottom;
+    color:#ddd;
+    font:13pt 'ExoRegular', monospace;
+    margin:0;
+    padding:0;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: all ease .2s;
+            transition: all ease .2s;
+}
+a:hover {
+    color: #27DCE9;
+}
+
+
+
+/*
+ * 2. Outer layout
+ * ---------------
+ */
+
+body > section,
+body > header > div{
+    max-width: 1000px;
+    margin: auto;
+}
+body > section {
+    padding: 40px;
+}
+
+
+
+/*
+ * 2. Global header
+ * ----------------
+ */
+
+body > header {
+    margin: 0;
+    height: 60px;
+    padding: 0 40px;
+    font-size: 22pt;
+    background-color: rgba(34, 34, 34, 0.43);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+body > header > div {
+    height: 60px;
+}
+body > header #logo{
+    height: 32px;
+    width: 245px;
+    margin-top: 10px;
+    float: left;
+    margin-top: 15px;
+    color: transparent;
+    background: center top / 100% auto;
+}
+body > header #logo.full {
+    background-image: url('img/archost_logo_sprite_full_32.png');
+}
+body > header #logo.min {
+    width: 32px;
+    background-image: url('img/archost_logo_sprite_min_32.png');
+}
+body > header #logo:hover{
+    background-position: center bottom;
+}
+
+
+
+/*
+ * 3. Headlines/Headings
+ * ---------------------
+ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    font-family: "ExoLight", monospace;
+    color: #27DCE9;
+    font-size: 40pt;
+}
+h2 {
+    font-size: 30pt;
+    margin-bottom: .1em;
+}
+h2, h3, h4 {
+    color: #666;
+}
+body > section h1 {
+    text-align: center;
+}
+body > section h1:first-child {
+    margin-top: 20px;
+}
+
+
+
+/*
+ * 4. Cards-Layout / Inner Layout
+ * ------------------------------
+ */
+
+.card-bg {
+    display:  -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    position: relative;
+}
+.card {
+    width: 40%;
+        -ms-flex: 1 1 40%;
+    -webkit-flex: 1 1 40%;
+            flex: 1 1 40%;
+    padding: 40px;
+    margin: 0 auto 20px;
+}
+.card.boxed {
+    background-color: rgba(34, 34, 34, 0.6);
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+.card.wide {
+    width: 80%;
+        -ms-flex: 1 1 80%;
+    -webkit-flex: 1 1 80%;
+            flex: 1 1 80%;
+}
+.card h1:first-child,
+.card h2:first-child,
+.card h3:first-child {
+    margin-top: 0;
+}
+
+
+
+/*
+ * 6. Forms & Buttons
+ * ------------------
+ */
+
+.text_input, .textarea_input, .submit_input{
+    background-color:#D6E8EE;
+    color:#19262D;
+    font-family:'ExoRegular', monospace;
+    margin: 12px 6px 12px 0;
+    padding: 0 8px;
+    border: 0;
+    font-size: 14pt;
+    height: 32pt;
+}
+.text_input:focus, .textarea_input:focus{
+    background-color:#A6D0DE;
+}
+.submit_input:hover{
+    background-color:#38CAFF;
+    color:#19262D;
+}
+
+/* Nice custom buttons */
+.button {
+    display: inline-block;
+    padding: .5em 1em;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset, 0 2px 5px rgba(0, 0, 0, .2);
+    -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+}
+.button:hover {
+    background-color: rgba(255, 255, 255, .15);
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset, 0 2px 10px rgba(0, 0, 0, .4);
+}
+.button:active {
+    background-color: #222;
+    box-shadow: none;
+    outline: 0;
+}
+
+
+
+/*
+ * 7. Footer
+ * ---------
+ */
+
+footer{
+    color:#CDEDEB;
+    font-size:13pt;
+    margin: 120px 0 50px;
+    text-align:center;
+    color: #666;
+    font-family:'ExoRegular', monospace;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+}
+footer a{
+    color: #888;
+    text-decoration:none;
 }
