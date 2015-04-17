@@ -40,6 +40,7 @@ body {
     background: #111 url('img/noise.png') fixed repeat right bottom;
     color: #ddd;
     font: 13pt 'Exo', monospace;
+    letter-spacing: 0.02em;
     margin: 60px 0 0;
     padding: 0;
 }
@@ -170,7 +171,7 @@ h1 {
 }
 h2 {
     font-size: 30pt;
-    margin-bottom: .1em;
+    margin-bottom: .5em;
 }
 h2, h3, h4 {
     color: #666;
