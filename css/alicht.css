@@ -7,7 +7,7 @@
  * 0. Imports
  * 1. General declarations / Body
  * 2. Outer layout
- * 3. Global header
+ * 3. Global header & Navigation
  * 4. Headings/Headlines
  * 5. Cards-Layout / Inner Layout
  * 6. Forms & Buttons
@@ -34,12 +34,12 @@
  * ------------------------------
  */
 
-body{
-    background:#111 url('img/noise.png') fixed repeat right bottom;
-    color:#ddd;
-    font:13pt 'ExoRegular', monospace;
-    margin:0;
-    padding:0;
+body {
+    background: #111 url('img/noise.png') fixed repeat right bottom;
+    color: #ddd;
+    font: 13pt 'ExoRegular', monospace;
+    margin: 60px 0 0;
+    padding: 0;
 }
 a {
     color: #fff;
@@ -49,6 +49,12 @@ a {
 }
 a:hover {
     color: #27DCE9;
+}
+code {
+    background-color: #000;
+    padding: 2px 5px;
+    border-radius: 3px;
+    display: inline-block;
 }
 
 
@@ -64,13 +70,17 @@ body > header > div{
     margin: auto;
 }
 body > section {
-    padding: 40px;
+    padding: 40px 0;
+}
+body > section > * {
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 
 
 /*
- * 2. Global header
+ * 3. Global header
  * ----------------
  */
 
@@ -79,8 +89,13 @@ body > header {
     height: 60px;
     padding: 0 40px;
     font-size: 22pt;
-    background-color: rgba(34, 34, 34, 0.43);
+    background: url(img/noise.png) repeat #191919;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 body > header > div {
     height: 60px;
@@ -90,7 +105,7 @@ body > header #logo{
     width: 245px;
     margin-top: 10px;
     float: left;
-    margin-top: 15px;
+    margin-top: 13px;
     color: transparent;
     background: center top / 100% auto;
 }
@@ -105,10 +120,39 @@ body > header #logo:hover{
     background-position: center bottom;
 }
 
+body > header nav {
+    text-align: right;
+    height: 60px;
+    font-size: 60%;
+}
+body > header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body > header nav li {
+    line-height: 63px;
+    display: inline-block;
+    padding: 0;
+}
+body > header nav li a {
+    display: inline-block;
+    line-height: 35px;
+    padding: 0 10px;
+    border-radius: 3px;
+    color: rgba(255, 255, 255, .6);
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.4);
+}
+body > header nav li a:hover {
+    background-color: rgb(42, 42, 42);
+    box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset,
+        0 2px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
+}
 
 
 /*
- * 3. Headlines/Headings
+ * 4. Headlines/Headings
  * ---------------------
  */
 
@@ -138,7 +182,7 @@ body > section h1:first-child {
 
 
 /*
- * 4. Cards-Layout / Inner Layout
+ * 5. Cards-Layout / Inner Layout
  * ------------------------------
  */
 
@@ -149,6 +193,8 @@ body > section h1:first-child {
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
     position: relative;
+    padding: 0;
+    margin: 50px auto;
 }
 .card {
     width: 40%;
@@ -182,39 +228,77 @@ body > section h1:first-child {
  * ------------------
  */
 
-.text_input, .textarea_input, .submit_input{
-    background-color:#D6E8EE;
-    color:#19262D;
-    font-family:'ExoRegular', monospace;
-    margin: 12px 6px 12px 0;
-    padding: 0 8px;
-    border: 0;
-    font-size: 14pt;
-    height: 32pt;
+form {
+    display:  -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
 }
-.text_input:focus, .textarea_input:focus{
-    background-color:#A6D0DE;
+form > * {
+    width: 25%;
+        -ms-flex: 1 1 25%;
+    -webkit-flex: 1 1 25%;
+            flex: 1 1 25%;
+    margin: 5px;
 }
-.submit_input:hover{
-    background-color:#38CAFF;
-    color:#19262D;
+form input,
+form textarea {
+    background-color: #2a2a2a;
+    padding: 6px 20px;
+    border: 1px solid #2a2a2a;
+    border-radius: 3px;
+    font-size: 100%;
+    color: #dedede;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
+    -webkit-transition: all ease .2s;
+            transition: all ease .2s;
+}
+form textarea {
+    width: 80%;
+        -ms-flex: 1 1 80%;
+    -webkit-flex: 1 1 80%;
+            flex: 1 1 80%;
+}
+form input:focus,
+form textarea:focus {
+    border-color: #27DCE9;
+    box-shadow: 0 2px 10px rgba(39, 220, 233, 0.15);
+}
+form button,
+form input[type="submit"] {
+    font-size: 80%;
+    text-transform: uppercase;
+    padding: .5em 1em .2em !important;
+    font-weight: 800;
+    line-height: 1.8;
 }
 
-/* Nice custom buttons */
-.button {
+.button,
+form button,
+form input[type="submit"] {
     display: inline-block;
     padding: .5em 1em;
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, .1);
-    box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset, 0 2px 5px rgba(0, 0, 0, .2);
+    border: 0;
+    cursor: pointer;
+    color: #27DCE9;
+    background: url('img/noise.png') repeat rgba(255, 255, 255, .1);
+    box-shadow: inset 0 -3px rgba(0, 0, 0, .3),
+        0 2px 5px rgba(0, 0, 0, .2);
     -webkit-transition: all ease .5s;
             transition: all ease .5s;
 }
-.button:hover {
+.button:hover,
+form button:hover,
+form input[type="submit"]:hover {
     background-color: rgba(255, 255, 255, .15);
-    box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset, 0 2px 10px rgba(0, 0, 0, .4);
+    box-shadow: inset 0 -3px rgba(0, 0, 0, .3),
+        0 2px 10px rgba(0, 0, 0, .4);
 }
-.button:active {
+.button:active,
+form button:active,
+form input[type="submit"]:active {
     background-color: #222;
     box-shadow: none;
     outline: 0;
@@ -228,15 +312,15 @@ body > section h1:first-child {
  */
 
 footer{
-    color:#CDEDEB;
-    font-size:13pt;
+    color: #CDEDEB;
+    font-size: 13pt;
     margin: 120px 0 50px;
-    text-align:center;
+    text-align: center;
     color: #666;
-    font-family:'ExoRegular', monospace;
+    font-family: 'ExoRegular', monospace;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
 }
 footer a{
     color: #888;
-    text-decoration:none;
+    text-decoration: none;
 }
