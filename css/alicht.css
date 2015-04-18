@@ -48,10 +48,15 @@
 body {
     background: #111 url('img/noise.png') fixed repeat right bottom;
     color: #ddd;
-    font: 13pt 'Exo', 'Fira Mono', monospace;
+    font: 11pt 'Exo', 'Fira Mono', monospace;
     letter-spacing: 0.02em;
     margin: 60px 0 0;
     padding: 0;
+}
+@media screen and (min-width:750px) {
+    body {
+        font-size: 13pt;
+    }
 }
 a {
     color: #fff;
