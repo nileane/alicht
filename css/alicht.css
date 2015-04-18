@@ -28,6 +28,7 @@
 
 @import url('fonts/exo/exo.css');
 @import url('fonts/octicons/octicons.css');
+@import url('fonts/fira/fira.css');
 
 
 
@@ -39,7 +40,7 @@
 body {
     background: #111 url('img/noise.png') fixed repeat right bottom;
     color: #ddd;
-    font: 13pt 'Exo', monospace;
+    font: 13pt 'Exo', 'Fira Mono', monospace;
     letter-spacing: 0.02em;
     margin: 60px 0 0;
     padding: 0;
@@ -58,6 +59,45 @@ code {
     padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;
+    font-family: "Fira Mono", monospace;
+}
+pre {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    -webkit-transition: all ease .2s;
+            transition: all ease .2s;
+    font-family: "Fira Mono", monospace;
+}
+pre:hover {
+    border: 1px solid rgba(39, 220, 233, 0.6);
+}
+pre code {
+    background: none;
+    padding: 0;
+    display: inline;
+}
+blockquote {
+    color: #777;
+    margin: 50px 0;
+    padding: 0 20px;
+    border-left: 6px solid;
+    font-size: 120%;
+}
+img {
+    max-width: 100%;
+    margin: 15px auto;
+    border: 0;
+}
+hr {
+    border: 4px solid rgba(39, 220, 233, 0.24);
+    margin: 50px 0px;
+}
+body > hr {
+    border-color: rgba(0, 0, 0, .8);
 }
 
 
@@ -74,6 +114,8 @@ body > header > div{
 }
 body > section {
     padding: 40px 0;
+    position: relative;
+    overflow: hidden;
 }
 body > section > * {
     padding-left: 40px;
@@ -103,12 +145,11 @@ body > header {
 body > header > div {
     height: 60px;
 }
-body > header #logo{
+body > header #logo {
     height: 32px;
     width: 245px;
-    margin-top: 10px;
     float: left;
-    margin-top: 13px;
+    margin-top: 14px;
     color: transparent;
     background: center top / 100% auto;
 }
@@ -164,14 +205,17 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 h1 {
-    font-family: "Exo", monospace;
+    font-family: "Exo", 'Fira Mono', monospace;
     font-weight: 300;
     color: #27DCE9;
     font-size: 40pt;
 }
 h2 {
-    font-size: 30pt;
+    font-size: 32pt;
     margin-bottom: .5em;
+}
+h3 {
+    font-size: 22pt;
 }
 h2, h3, h4 {
     color: #666;
@@ -212,6 +256,8 @@ body > section:first-of-type h1[id] {
             flex: 1 1 40%;
     padding: 40px;
     margin: 0 auto 20px;
+    overflow: hidden;
+    position: relative;
 }
 .card.boxed {
     background-color: rgba(34, 34, 34, 0.6);
@@ -249,7 +295,7 @@ form > * {
         -ms-flex: 1 1 25%;
     -webkit-flex: 1 1 25%;
             flex: 1 1 25%;
-    margin: 5px;
+    margin: 5px 5px 5px 0;
 }
 form input,
 form textarea {
@@ -258,7 +304,7 @@ form textarea {
     border: 1px solid #2a2a2a;
     border-radius: 3px;
     font-size: 100%;
-    font-family: "Exo", monospace;
+    font-family: "Exo", 'Fira Mono', monospace;
     color: #dedede;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
     -webkit-transition: all ease .2s;
@@ -278,7 +324,7 @@ form textarea:focus {
 form button,
 form input[type="submit"] {
     font-size: 80%;
-    font-family: "Exo", monospace;
+    font-family: "Exo", 'Fira Mono', monospace;
     text-transform: uppercase;
     padding: .5em 1em .4em !important;
     font-weight: 800;
@@ -322,16 +368,16 @@ form input[type="submit"]:active {
  * ---------
  */
 
-footer{
+footer {
     color: #CDEDEB;
     font-size: 13pt;
     margin: 120px 0 50px;
     text-align: center;
     color: #666;
-    font-family: 'Exo', monospace;
+    font-family: 'Exo', 'Fira Mono', monospace;
     text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
 }
-footer a{
+footer a {
     color: #888;
     text-decoration: none;
 }

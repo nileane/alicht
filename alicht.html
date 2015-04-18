@@ -13,6 +13,7 @@
         <a href="#"><div id="logo" class="full">Archost</div></a>
         <nav>
             <li><a href="#cards">Card layout</a></li>
+            <li><a href="#generic">Generic Markup</a></li>
             <li><a href="#forms">Forms</a></li>
         </nav>
     </div>
@@ -52,6 +53,69 @@
     </div>
 </section>
 
+<hr>
+
+<section>
+    <h1 id="generic">Generic Markup</h1>
+    <p>This is to demo some of the most basic styles for all sorts of markups.</p>
+
+    <div class="card-bg">
+        <div class="card boxed">
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+
+            <p>We want to write some text <em>in italic</em>, but also sometimes <strong>in bold</strong> variants.</p>
+
+            <ul>
+                <li>First item</li>
+                <li>Second, quite longer, item in this list</li>
+                <li>OMGCSS</li>
+            </ul>
+
+            <ol>
+                <li>Ordinal lists, shall we too?</li>
+                <li>Sure, why not ?</li>
+                <li>Shake my booty, pls.</li>
+            </ol>
+
+            <blockquote>
+            <p>"Baby, baby, baby oh!"<br>
+            — Justin Bieber.</p>
+            </blockquote>
+        </div>
+
+        <div class="card">
+            <p>Some random text I'm writing because I want to get the crap out of here, anyway. But this text has the particularity of including some <code>code { display: inline-block; }</code>.</p>
+
+            <p>Also, we might want to use some big blocks of code, such as the following CSS&nbsp;declarations:</p>
+
+            <pre><code>pre {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    transition: all ease .2s;
+    font-family: "Fira Mono", monospace;
+}</code></pre>
+        </div>
+
+        <div class="card">
+            <p>Also, image inclusions work quite well too!</p>
+            <p>Here's a small one<br>
+            <img src="css/img/archost_logo_sprite_full_32.png" alt="Archost Logo"></p>
+        </div>
+        <div class="card">
+            <p>And a bigger one to illustrate how it fits its container
+            <img src="css/img/archost_logo_sprite_full.png" alt="Archost Big Logo"></p>
+        </div>
+    </div>
+</section>
+
+<hr>
+
 <section>
     <h1 id="forms">Forms</h1>
 
@@ -80,7 +144,6 @@
         </div>
     </div>
 </section>
-
 
 <footer>
     <p>Copyright &copy; 2014-2015 &mdash; Archost</p>
