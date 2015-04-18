@@ -156,6 +156,7 @@ body > header {
 body > header > div {
     max-width: calc(1000px - 4.4em);
     padding: 0 2.2em;
+    margin: auto;
     height: 60px;
 }
 body > header #logo {
