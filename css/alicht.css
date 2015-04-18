@@ -284,7 +284,6 @@ body > section:first-of-type h1[id] {
 }
 .card.boxed {
     background-color: rgba(34, 34, 34, 0.6);
-    border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
 .card.wide {
@@ -301,6 +300,9 @@ body > section:first-of-type h1[id] {
 @media screen and (min-width:1000px) {
     .card {
         margin: 0 5px 20px 0;
+    }
+    .card.boxed {
+        border-radius: 3px;
     }
 }
 
