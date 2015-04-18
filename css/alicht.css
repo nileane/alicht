@@ -130,7 +130,7 @@ body > section {
     position: relative;
     overflow: hidden;
 }
-body > section > * {
+body > section > *:not(h1) {
     padding-left: 2.2em;
     padding-right: 2.2em;
 }
@@ -172,7 +172,7 @@ body > header #logo.min {
     width: 32px;
     background-image: url('img/archost_logo_sprite_min_32.png');
 }
-body > header #logo:hover{
+body > header #logo:hover {
     background-position: center bottom;
 }
 @media screen and (max-width:749px) {
