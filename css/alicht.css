@@ -243,6 +243,18 @@ h4 {
 h2, h3, h4 {
     color: #666;
 }
+@media screen and (max-width:749px) {
+    h1 {
+        font-size: 280%;
+    }
+    h2 {
+        font-size: 220%;
+    }
+    h3 {
+        font-size: 160%;
+    }
+}
+
 body > section h1 {
     text-align: center;
 }
