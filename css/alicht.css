@@ -144,21 +144,23 @@ body > section > *:not(h1) {
 
 body > header {
     margin: 0;
-    height: 60px;
+    max-height: 60px;
     padding: 0;
     background: url(img/noise.png) repeat #191919;
     box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    overflow: hidden;
     position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     right: 0;
+    -webkit-transition: all ease .2s;
+            transition: all ease .2s;
 }
 body > header > div {
     max-width: calc(1000px - 4.4em);
     padding: 0 2.2em;
     margin: auto;
-    height: 60px;
 }
 body > header #logo {
     height: 32px;
@@ -187,10 +189,11 @@ body > header #logo:hover {
 
 body > header nav {
     text-align: right;
-    height: 60px;
 }
 body > header nav ul {
     list-style: none;
+    display: inline-block;
+    vertical-align: middle;
     padding: 0;
     margin: 0;
 }
@@ -212,6 +215,41 @@ body > header nav li a:hover {
     box-shadow: 0 -2px rgba(0, 0, 0, 0.2) inset,
         0 2px 5px rgba(0, 0, 0, 0.2);
     text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
+}
+body > header nav .menu-label {
+    display: none;
+}
+@media screen and (max-width:749px) {
+    body > header nav .menu-label {
+        display: block;
+        vertical-align: top;
+        float: right;
+        line-height: 60px;
+        -webkit-transition: all ease .2s;
+                transition: all ease .2s;
+    }
+    body > header:hover {
+        max-height: 800px;
+    }
+    body > header:hover .menu-label {
+        opacity: 0;
+    }
+    body > header nav ul {
+        display: block;
+        clear: both;
+    }
+    body > header nav li {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+    }
+    body > header nav li a {
+        display: block;
+        line-height: 50px;
+    }
+    body > header nav li:last-child {
+        margin-bottom: 15px;
+    }
 }
 
 
