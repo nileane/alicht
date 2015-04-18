@@ -1,0 +1,34 @@
+{
+    "name": "archost/alicht",
+    "description": "Archost main stylesheet.",
+    "version": "1.0",
+    "type": "library",
+    "keywords": ["archost", "hosting", "stylesheet", "css", "template"],
+    "homepage": "http://github.com/archost/alicht",
+    "license": "MIT",
+    "authors":
+    [
+        {
+            "name": "YouniS Bensalah",
+            "email": "younis.bensalah@riseup.net",
+            "homepage": "http://younishd.fr"
+        },
+        {
+            "name": "William Dorffer",
+            "email": "schoewilliam@schoewilliam.fr",
+            "homepage": "http://schoewilliam.fr"
+        }
+    ],
+    "require":
+    {
+        "younishd/endobox": "dev-master"
+    },
+    "minimum-stability": "dev",
+    "autoload":
+    {
+        "psr-4":
+        {
+            "Archost\\Acore\\": "src/Acore/"
+        }
+    }
+}
