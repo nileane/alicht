@@ -255,7 +255,7 @@ body > section:first-of-type h1[id] {
     -webkit-flex: 1 1 40%;
             flex: 1 1 40%;
     padding: 40px;
-    margin: 0 auto 20px;
+    margin: 0 5px 20px 0;
     overflow: hidden;
     position: relative;
 }
