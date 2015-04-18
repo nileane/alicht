@@ -176,7 +176,7 @@ body > header #logo.min {
 body > header #logo:hover {
     background-position: center bottom;
 }
-@media screen and (max-width:749px) {
+@media screen and (max-width:999px) {
     body > header #logo.full {
         width: 32px;
         background-image: url('img/archost_logo_sprite_min_32.png');
