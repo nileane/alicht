@@ -118,8 +118,8 @@ body > section {
     overflow: hidden;
 }
 body > section > * {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2.2em;
+    padding-right: 2.2em;
 }
 
 
@@ -208,14 +208,17 @@ h1 {
     font-family: "Exo", 'Fira Mono', monospace;
     font-weight: 300;
     color: #27DCE9;
-    font-size: 40pt;
+    font-size: 300%;
 }
 h2 {
-    font-size: 32pt;
+    font-size: 250%;
     margin-bottom: .5em;
 }
 h3 {
-    font-size: 22pt;
+    font-size: 180%;
+}
+h4 {
+    font-size: 120%;
 }
 h2, h3, h4 {
     color: #666;
@@ -254,7 +257,7 @@ body > section:first-of-type h1[id] {
         -ms-flex: 1 1 40%;
     -webkit-flex: 1 1 40%;
             flex: 1 1 40%;
-    padding: 40px;
+    padding: 2em 2.2em;
     margin: 0 5px 20px 0;
     overflow: hidden;
     position: relative;
@@ -370,7 +373,7 @@ form input[type="submit"]:active {
 
 footer {
     color: #CDEDEB;
-    font-size: 13pt;
+    font-size: 100%;
     margin: 120px 0 50px;
     text-align: center;
     color: #666;
