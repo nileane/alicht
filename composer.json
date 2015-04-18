@@ -18,17 +18,5 @@
             "email": "schoewilliam@schoewilliam.fr",
             "homepage": "http://schoewilliam.fr"
         }
-    ],
-    "require":
-    {
-        "younishd/endobox": "dev-master"
-    },
-    "minimum-stability": "dev",
-    "autoload":
-    {
-        "psr-4":
-        {
-            "Archost\\Acore\\": "src/Acore/"
-        }
-    }
+    ]
 }
