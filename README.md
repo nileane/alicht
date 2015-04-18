@@ -1,3 +1,3 @@
 # alicht
 
-Archost main stylesheet.
+[Archost](http://archost.eu) main stylesheet.
