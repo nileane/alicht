@@ -144,6 +144,7 @@ body > section > *:not(h1) {
 
 body > header {
     margin: 0;
+    min-height: 60px;
     max-height: 60px;
     padding: 0;
     background: url(img/noise.png) repeat #191919;
