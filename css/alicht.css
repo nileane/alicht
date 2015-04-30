@@ -163,6 +163,16 @@ body > header > div {
     padding: 0 2.2em;
     margin: auto;
 }
+body > header .site-title {
+    color: #EEE;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 60px;
+    margin: 0;
+    float: left;
+    height: 60px;
+}
 body > header #logo {
     height: 32px;
     width: 245px;
