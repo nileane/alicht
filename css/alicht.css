@@ -513,6 +513,10 @@ h1 .avatar {
 header + .alert {
     margin-top: 5em;
 }
+.alert.fadin {
+    -webkit-animation: fadin 1s 1;
+            animation: fadin 1s 1;
+}
 
 .alert.success {
     background-color: rgba(39, 233, 151, 0.45);
@@ -533,4 +537,25 @@ header + .alert {
 }
 .alert.warning strong {
     color: #EDB17F;
+}
+
+@-webkit-keyframes fadin {
+    from {
+        -webkit-transform: translateY(-60%);
+        opacity: 0;
+    }
+    to {
+        -webkit-transform: translate(0);
+        opacity: 1;
+    }
+}
+@keyframes fadin {
+    from {
+        transform: translateY(-60%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
 }

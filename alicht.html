@@ -159,6 +159,12 @@
         <div class="card boxed wide">
             <p>Those come useful when you need to display some short, but important alerts or notifications. They need to be simple and visible.</p>
             <p>There are 4 types of alert boxes: <code>.alert</code>, <code>.alert.success</code>, <code>.alert.error</code>, <code>.alert.warning</code>.<br>You can see what they look like below, in this order.</p>
+            <style>.alert.fadin {
+                -webkit-animation-duration: 1.6s;
+                animation-duration: 1.6s;
+                -webkit-animation-iteration-count: infinite;
+                animation-iteration-count: infinite;
+            }</style>
         </div>
 
 
@@ -167,12 +173,20 @@
             <pre><code>&lt;div class="alert"&gt;
     &lt;strong&gt;Notice&lt;/strong&gt; Lorem ipsum dolor sit amet
 &lt;/div&gt;</code></pre>
+
+
+
+            <div class="alert fadin"><strong>Notice</strong> Lorem ipsum dolor sit amet</div>
+            <p>They also come with a nice appearing animation if you add the <code>.fadin</code> class. [The animation is here looped and made slower for the purpose of the demo.]</p>
+            <pre><code>&lt;div class="alert <strong>fadin</strong>"&gt;
+    &lt;strong&gt;Notice&lt;/strong&gt; Lorem ipsum dolor sit amet
+&lt;/div&gt;</code></pre>
         </div>
 
 
         <div class="card wide boxed">
             <div class="alert success"><strong>Success!</strong> Lorem ipsum dolor sit amet</div>
-            <pre><code>&lt;div class="alert success"&gt;
+            <pre><code>&lt;div class="alert <strong>success</strong>"&gt;
     &lt;strong&gt;Success!&lt;/strong&gt; Lorem ipsum dolor sit amet
 &lt;/div&gt;</code></pre>
         </div>
@@ -180,7 +194,7 @@
 
         <div class="card wide">
             <div class="alert error"><strong>Error!</strong> Lorem ipsum dolor sit amet</div>
-            <pre><code>&lt;div class="alert error"&gt;
+            <pre><code>&lt;div class="alert <strong>error</strong>"&gt;
     &lt;strong&gt;Error!&lt;/strong&gt; Lorem ipsum dolor sit amet
 &lt;/div&gt;</code></pre>
         </div>
@@ -188,7 +202,7 @@
 
         <div class="card wide boxed">
             <div class="alert warning"><strong>Beware!</strong> Lorem ipsum dolor sit amet</div>
-            <pre><code>&lt;div class="alert warning"&gt;
+            <pre><code>&lt;div class="alert <strong>warning</strong>"&gt;
     &lt;strong&gt;Beware!&lt;/strong&gt; Lorem ipsum dolor sit amet
 &lt;/div&gt;</code></pre>
         </div>
