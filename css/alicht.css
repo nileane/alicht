@@ -186,7 +186,7 @@ body > header #logo {
 body > header #logo.full {
     background-image: url('img/archost_logo_sprite_flat_full_32.png');
     -o-animation-duration: 0s;
-    animation-duration: 0s;');
+    animation-duration: 0s;
 }
 body > header #logo.min {
     width: 32px;
