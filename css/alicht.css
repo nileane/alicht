@@ -351,7 +351,8 @@ body > section:first-of-type h1[id] {
     background-color: rgba(34, 34, 34, 0.6);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
-.card.wide {
+.card.wide,
+form .wide {
     width: 80%;
         -ms-flex: 1 1 80%;
     -webkit-flex: 1 1 80%;
