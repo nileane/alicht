@@ -1,7 +1,7 @@
 {
     "name": "archost/alicht",
     "description": "Archost main stylesheet.",
-    "version": "1.0",
+    "version": "1.0.0-dev",
     "type": "library",
     "keywords": ["archost", "hosting", "stylesheet", "css", "template"],
     "homepage": "http://github.com/archost/alicht",
