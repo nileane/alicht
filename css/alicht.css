@@ -70,12 +70,17 @@ a {
 a:hover {
     color: #27DCE9;
 }
+em {
+    opacity: .8;
+}
 code {
     background-color: #000;
+    color: #aaa;
     padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;
     font-family: "Fira Mono", monospace;
+    font-size: 80%;
 }
 pre {
     padding: 10px 20px;
