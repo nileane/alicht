@@ -70,12 +70,17 @@ a {
 a:hover {
     color: #27DCE9;
 }
+em {
+    opacity: .8;
+}
 code {
     background-color: #000;
+    color: #aaa;
     padding: 2px 5px;
     border-radius: 3px;
     display: inline-block;
     font-family: "Fira Mono", monospace;
+    font-size: 80%;
 }
 pre {
     padding: 10px 20px;
@@ -507,37 +512,54 @@ h1 .avatar {
     padding: .6em 2.2em;
     background-color: rgba(39, 219, 233, 0.4);
 }
-.alert strong {
-    text-transform: uppercase;
-    font-weight: 800;
+.alert:before { /* We're using Octicons as labels */
+    font: normal normal normal 20px/1 octicons;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0 .8em 0 -.9em;
+    content: '\f059'; /* ie. .octicon-info:before in css/fonts/octicons/octicons.css */
 }
 header + .alert {
     margin-top: 5em;
 }
 .alert.fadin {
-    -webkit-animation: fadin 1s 1;
-            animation: fadin 1s 1;
+    -webkit-animation: fadin 1.3s 1;
+            animation: fadin 1.3s 1;
+}
+.alert.fadin:before {
+    -webkit-animation: popin 1.3s 1;
+            animation: popin 1.3s 1;
 }
 
 .alert.success {
     background-color: rgba(39, 233, 151, 0.45);
 }
-.alert.success strong {
+.alert.success:before {
     color: rgb(39, 233, 151);
+    content: '\f03a'; /* ie. .octicon-check:before in css/fonts/octicons/octicons.css */
 }
 
 .alert.error {
     background-color: rgba(233, 39, 39, 0.4);
 }
-.alert.error strong {
+.alert.error:before {
     color: #ED7F7F;
+    content: '\f091'; /* ie. .octicon-bug:before in css/fonts/octicons/octicons.css */
 }
 
 .alert.warning {
     background-color: rgba(255, 173, 69, 0.4);
 }
-.alert.warning strong {
+.alert.warning:before {
     color: #EDB17F;
+    content: '\f02d'; /* ie. .octicon-alert:before in css/fonts/octicons/octicons.css */
 }
 
 @-webkit-keyframes fadin {
@@ -557,6 +579,35 @@ header + .alert {
     }
     to {
         transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes popin {
+    0% {
+        -webkit-transform: scale(.2);
+        opacity: 0;
+    }
+    50% {
+        -webkit-transform: scale(3);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes popin {
+    0% {
+        transform: scale(.2);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(3);
+        opacity: .5;
+    }
+    100% {
+        transform: scale(1);
         opacity: 1;
     }
 }
