@@ -164,7 +164,7 @@ body > section > *:not(h1) {
 body > section.cover {
     max-width: none;
     padding: 80px 0;
-    min-height: calc(100vh - 250px);
+    min-height: calc(100vh - 220px);
     background-size: cover;
     background-position: center;
     box-shadow: 0 -3px 6px rgba(0, 0, 0, .3) inset,
