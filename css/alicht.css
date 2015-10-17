@@ -27,7 +27,7 @@
  * @media queries are dispatched in the file, in the sections where they belong, to which they apply.
  * We're trying here to use only 2 breaking point, which are:
  *    > (min-width:750px) or (max-width:749px)
- *    > (min-width:999px) or (max-width:1000px)
+ *    > (min-width:999px) or (max-width:1170px)
  */
 
 
@@ -132,7 +132,7 @@ body > hr {
  */
 
 body > section {
-    max-width: 1000px;
+    max-width: 1170px;
     margin: auto;
 }
 body > section {
@@ -169,7 +169,7 @@ body > header {
             transition: all ease .2s;
 }
 body > header > div {
-    max-width: calc(1000px - 4.4em);
+    max-width: calc(1170px - 4.4em);
     padding: 0 2.2em;
     margin: auto;
 }
@@ -375,7 +375,7 @@ form .wide {
 .card h3:first-child {
     margin-top: 0;
 }
-@media screen and (min-width:1000px) {
+@media screen and (min-width:1170px) {
     .card {
         margin: 0 5px 20px 0;
     }
@@ -515,7 +515,7 @@ h1 .avatar {
 .alert {
     border-radius: 3px;
     margin: 1.8em auto;
-    max-width: calc(1000px - 4.4em);
+    max-width: calc(1170px - 4.4em);
     padding: .6em 2.2em;
     background-color: rgba(39, 219, 233, 0.4);
 }
