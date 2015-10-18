@@ -218,9 +218,16 @@ body > header.static {
     position: absolute;
 }
 body > header > div {
-    max-width: calc(1170px - 4.4em);
     padding: 0 2.2em;
     margin: auto;
+    display:  -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+}
+body > header:not(.full-width) > div {
+    max-width: calc(1170px - 4.4em);
 }
 body > header .site-title {
     color: #27DCE9;
@@ -266,6 +273,10 @@ body > header #logo:hover {
 
 body > header nav {
     text-align: right;
+    width: 40%;
+        -ms-flex: 1 1 40%;
+    -webkit-flex: 1 1 40%;
+            flex: 1 1 40%;
 }
 body > header nav ul {
     list-style: none;
@@ -275,7 +286,7 @@ body > header nav ul {
     margin: 0;
 }
 body > header nav li {
-    line-height: 63px;
+    line-height: 60px;
     display: inline-block;
     padding: 0;
 }
@@ -301,45 +312,42 @@ body > header nav li a:before {
             transform: skewX(-10deg);
     transition: all .2s;
     box-shadow: 0 -3px rgba(0, 0, 0, .3) inset,
-        -5px 2px 5px rgba(0, 0, 0, .2);
+        1px 2px 5px rgba(0, 0, 0, .2);
 }
 body > header nav li a:hover:before {
     opacity: 1;
 }
 
-body > header nav .menu-label {
+body > header nav:before { /* We're using Octicons as labels */
+    font: normal normal normal 32px/1 octicons;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     display: none;
+    content: '\f05e'; /* ie. .octicon-info:before in css/fonts/octicons/octicons.css */
 }
-@media screen and (max-width:749px) {
-    body > header nav .menu-label {
+@media screen and (max-width:999px) {
+    body > header nav {
+        padding: 0 2em;
+    }
+    body > header nav:before {
         display: block;
-        vertical-align: top;
-        float: right;
-        line-height: 60px;
-        -webkit-transition: all ease .2s;
-                transition: all ease .2s;
+        position: absolute;
+        right: -12px;
+        top: 13px;
+        transition: all .2s;
+    }
+    body > header:hover nav:before {
+        right: -2px;
     }
     body > header:hover {
-        max-height: 800px;
-    }
-    body > header:hover .menu-label {
-        opacity: 0;
-    }
-    body > header nav ul {
-        display: block;
-        clear: both;
-    }
-    body > header nav li {
-        display: block;
-        line-height: 50px;
-        text-align: center;
-    }
-    body > header nav li a {
-        display: block;
-        line-height: 50px;
-    }
-    body > header nav li:last-child {
-        margin-bottom: 15px;
+        max-height: 400px;
     }
 }
 
@@ -430,7 +438,7 @@ body > section:first-of-type h1[id] {
 .card.wide,
 form .wide {
     width: 80%;
-    overflow: visible;
+    overflow: hidden;
         -ms-flex: 1 1 80%;
     -webkit-flex: 1 1 80%;
             flex: 1 1 80%;
