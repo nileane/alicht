@@ -84,8 +84,7 @@ code {
 pre {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-    border: 1px solid transparent;
+    border-bottom: 3px solid rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     overflow: auto;
     -webkit-transition: all ease .2s;
@@ -93,7 +92,7 @@ pre {
     font-family: "Fira Mono", monospace;
 }
 pre:hover {
-    border: 1px solid rgba(39, 220, 233, 0.6);
+    border-bottom: 3px solid rgba(39, 220, 233, 0.6);
 }
 pre code {
     background: none;
@@ -143,7 +142,6 @@ body > section {
 body > section {
     padding: 40px 0;
     position: relative;
-    overflow: hidden;
 }
 body > section > *:not(h1) {
     padding-left: 2.2em;
@@ -429,6 +427,7 @@ body > section:first-of-type h1[id] {
 .card.wide,
 form .wide {
     width: 80%;
+    overflow: visible;
         -ms-flex: 1 1 80%;
     -webkit-flex: 1 1 80%;
             flex: 1 1 80%;
@@ -611,11 +610,10 @@ h1 .avatar {
  * ---------
  */
 .alert {
-    border-radius: 3px;
     margin: 1.8em auto;
     max-width: calc(1170px - 4.4em);
     padding: .6em 2.2em;
-    background-color: rgba(39, 219, 233, 0.4);
+    position: relative;
 }
 .alert:before { /* We're using Octicons as labels */
     font: normal normal normal 20px/1 octicons;
@@ -631,6 +629,18 @@ h1 .avatar {
     margin: 0 .8em 0 -.9em;
     content: '\f059'; /* ie. .octicon-info:before in css/fonts/octicons/octicons.css */
 }
+.alert:after {
+    content: " ";
+    position: absolute;
+    top: 0; bottom: 0; right: -.2em; left: -.2em;
+    background-color: rgba(39, 219, 233, 0.4);
+    box-shadow: 0 -3px rgba(0, 0, 0, .3) inset,
+        0 2px 4px rgba(0, 0, 0, .2);
+    -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+            transform: skewX(-10deg);
+    z-index: -1;
+}
 header + .alert {
     margin-top: 5em;
 }
@@ -638,12 +648,7 @@ header + .alert {
     -webkit-animation: fadin 1.3s 1;
             animation: fadin 1.3s 1;
 }
-.alert.fadin:before {
-    -webkit-animation: popin 1.3s 1;
-            animation: popin 1.3s 1;
-}
-
-.alert.success {
+.alert.success:after {
     background-color: rgba(39, 233, 151, 0.45);
 }
 .alert.success:before {
@@ -651,7 +656,7 @@ header + .alert {
     content: '\f03a'; /* ie. .octicon-check:before in css/fonts/octicons/octicons.css */
 }
 
-.alert.error {
+.alert.error:after {
     background-color: rgba(233, 39, 39, 0.4);
 }
 .alert.error:before {
@@ -659,7 +664,7 @@ header + .alert {
     content: '\f091'; /* ie. .octicon-bug:before in css/fonts/octicons/octicons.css */
 }
 
-.alert.warning {
+.alert.warning:after {
     background-color: rgba(255, 173, 69, 0.4);
 }
 .alert.warning:before {
@@ -669,7 +674,7 @@ header + .alert {
 
 @-webkit-keyframes fadin {
     from {
-        -webkit-transform: translateY(-60%);
+        -webkit-transform: translateX(-3%);
         opacity: 0;
     }
     to {
@@ -679,32 +684,11 @@ header + .alert {
 }
 @keyframes fadin {
     from {
-        transform: translateY(-60%);
+        transform: translateX(-3%);
         opacity: 0;
     }
     to {
         transform: translate(0);
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes popin {
-    0% {
-        -webkit-transform: scale(5);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: scale(1);
-        opacity: 1;
-    }
-}
-@keyframes popin {
-    0% {
-        transform: scale(5);
-        opacity: 0;
-    }
-    100% {
-        transform: scale(1);
         opacity: 1;
     }
 }
