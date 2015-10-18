@@ -161,7 +161,7 @@ body > section > *:not(h1) {
 
 body > section.cover {
     max-width: none;
-    padding: 180px 0 50px;
+    padding: 80px 0 50px;
     min-height: 100vh;
     box-sizing: border-box;
     background-size: cover;
@@ -169,6 +169,9 @@ body > section.cover {
     box-shadow: 0 -3px 6px rgba(0, 0, 0, .3) inset,
         0 1px rgba(0, 0, 0, .4);
     width: 100%;
+}
+body > section.cover:first-of-type {
+    padding-top: 180px;
 }
 body > section.cover > * {
     margin-left: auto;
@@ -181,6 +184,12 @@ body > section.cover > .card-bg,
 body > section.cover > h1 {
     padding: 0;
     max-width: 1170px;
+}
+
+@media screen and (max-width:749px) {
+    body > section.cover:first-of-type {
+        padding-top: 100px;
+    }
 }
 
 
