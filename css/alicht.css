@@ -625,6 +625,7 @@ h1 .avatar {
     max-width: calc(1170px - 4.4em);
     padding: .6em 2.2em;
     position: relative;
+    color: #27DCE9;
 }
 .alert:before { /* We're using Octicons as labels */
     font: normal normal normal 20px/1 octicons;
@@ -644,7 +645,7 @@ h1 .avatar {
     content: " ";
     position: absolute;
     top: 0; bottom: 0; right: -.2em; left: -.2em;
-    background-color: rgba(39, 219, 233, 0.4);
+    background-color: rgb(36, 71, 75);
     box-shadow: 0 -3px rgba(0, 0, 0, .3) inset,
         0 2px 4px rgba(0, 0, 0, .2);
     -webkit-transform: skewX(-10deg);
@@ -659,6 +660,9 @@ header + .alert {
     -webkit-animation: fadin 1.3s 1;
             animation: fadin 1.3s 1;
 }
+.alert.success {
+    color: rgb(39, 233, 151);
+}
 .alert.success:after {
     background-color: rgba(39, 233, 151, 0.45);
 }
@@ -666,7 +670,9 @@ header + .alert {
     color: rgb(39, 233, 151);
     content: '\f03a'; /* ie. .octicon-check:before in css/fonts/octicons/octicons.css */
 }
-
+.alert.error {
+    color: #ED7F7F;
+}
 .alert.error:after {
     background-color: rgba(233, 39, 39, 0.4);
 }
@@ -674,7 +680,9 @@ header + .alert {
     color: #ED7F7F;
     content: '\f091'; /* ie. .octicon-bug:before in css/fonts/octicons/octicons.css */
 }
-
+.alert.warning {
+    color: #EDB17F;
+}
 .alert.warning:after {
     background-color: rgba(255, 173, 69, 0.4);
 }
