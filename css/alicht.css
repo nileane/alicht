@@ -214,6 +214,9 @@ body > header {
     -webkit-transition: all ease .2s;
             transition: all ease .2s;
 }
+body > header.static {
+    position: absolute;
+}
 body > header > div {
     max-width: calc(1170px - 4.4em);
     padding: 0 2.2em;
