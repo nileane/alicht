@@ -277,13 +277,6 @@ body > header nav li a {
     transition: all .2s;
     text-shadow: -1px -1px rgba(0, 0, 0, 0.4);
 }
-// body > header nav li a:hover {
-    background-color: #24474B;
-    box-shadow: 0 -3px rgba(0, 0, 0, .3) inset,
-        0 2px 5px rgba(0, 0, 0, .2);
-    text-shadow: -1px -1px rgba(0, 0, 0, 0.1);
-}
-
 body > header nav li a:before {
     content: " ";
     display: block;
@@ -292,7 +285,9 @@ body > header nav li a:before {
     top: 0; left: -.4em; right: -.4em; bottom: 0;
     z-index: -1;
     opacity: 0;
-    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+            transform: skewX(-10deg);
     transition: all .2s;
     box-shadow: 0 -3px rgba(0, 0, 0, .3) inset,
         -5px 2px 5px rgba(0, 0, 0, .2);
@@ -536,7 +531,9 @@ form input[type="submit"]:active {
     z-index: 0;
     width: 20px;
     bottom: 0;
-    transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+            transform: skewX(-20deg);
     transition: all .2s;
 }
 .button:hover:before,
