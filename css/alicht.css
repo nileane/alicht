@@ -222,10 +222,11 @@ body > header > div {
     margin: auto;
 }
 body > header .site-title {
-    color: #EEE;
+    color: #27DCE9;
     font-size: 180%;
-    text-transform: uppercase;
-    font-weight: 800;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 500;
     line-height: 60px;
     margin: 0;
     float: left;
@@ -233,7 +234,7 @@ body > header .site-title {
     transition: all .5s;
 }
 body > header .site-title:hover {
-    color: #27DCE9;
+    color: #fff;
 }
 body > header #logo {
     height: 32px;
