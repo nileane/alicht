@@ -20,6 +20,7 @@
  * 7. Footer
  * 8. Profile
  * 9. Alerts (Notifications)
+ * 10. Dismissable (close button)
  */
 
 /*
@@ -709,4 +710,25 @@ header + .alert {
         transform: translate(0);
         opacity: 1;
     }
+}
+
+/*
+ * 10. Dismissable (close button)
+ * ---------
+ */
+
+/* we style the X close button */
+a.dismissbtn:before {
+  font: normal normal normal 18px/1 octicons;
+  text-decoration: none;
+  float: right;
+  color: #808080;
+  content: '\f081';
+}
+
+.dismissbtn:hover:before,
+.dismissbtn:focus:before {
+  color: #d5d5d5;
+  text-decoration: none;
+  cursor: pointer;
 }
