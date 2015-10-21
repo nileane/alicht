@@ -514,14 +514,15 @@ form input[type="submit"] {
 form button,
 form input[type="submit"] {
     display: inline-block;
-    padding: .5em 1em;
+    padding: .5rem 1em;
     border: 0;
     cursor: pointer;
-    color: #fff;
-    background: repeat #333;
+    color: rgba(255, 255, 255, 0.6);
+    background: #333;
     position: relative;
     box-shadow: inset 0 -3px rgba(0, 0, 0, .3),
         0 2px 5px rgba(0, 0, 0, .2);
+    text-shadow: 0 -1px rgba(0, 0, 0, .4);
     -webkit-transition: all ease .5s;
             transition: all ease .5s;
 }
@@ -549,9 +550,9 @@ form input[type="submit"]:active {
     z-index: 0;
     width: 20px;
     bottom: 0;
-    -webkit-transform: skewX(-20deg);
-        -ms-transform: skewX(-20deg);
-            transform: skewX(-20deg);
+    -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+            transform: skewX(-10deg);
     transition: all .2s;
 }
 .button:hover:before,
