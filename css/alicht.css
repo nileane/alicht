@@ -20,7 +20,6 @@
  * 7. Footer
  * 8. Profile
  * 9. Alerts (Notifications)
- * 10. Dismissable (close button)
  */
 
 /*
@@ -604,6 +603,7 @@ footer a {
  * 8. Profile
  * ----------
  */
+
 .avatar {
     width: 120px;
     border-radius: 50%;
@@ -620,6 +620,7 @@ h1 .avatar {
  * 9. Alerts (Notifications)
  * ---------
  */
+
 .alert {
     margin: 1.8em auto;
     max-width: calc(1170px - 4.4em);
@@ -712,23 +713,22 @@ header + .alert {
     }
 }
 
-/*
- * 10. Dismissable (close button)
- * ---------
- */
-
-/* we style the X close button */
-a.dismissbtn:before {
-  font: normal normal normal 18px/1 octicons;
-  text-decoration: none;
-  float: right;
-  color: #808080;
-  content: '\f081';
+/* Close button */
+.dismiss-btn {
+    margin: 0 -.9em 0 0;
+    padding: 0 .5em;
+    float: right;
+    color: rgba(0, 0, 0, 0.65);
+    cursor: pointer;
+    text-shadow: 0 1px rgba(255, 255, 255, .15);
+    text-decoration: none;
+    -webkit-transition: all .2s;
+            transition: all .2s;
 }
-
-.dismissbtn:hover:before,
-.dismissbtn:focus:before {
-  color: #d5d5d5;
-  text-decoration: none;
-  cursor: pointer;
+.dismiss-btn:before {
+    font: normal normal normal 18px/1 octicons;
+    content: '\f081';
+}
+.dismiss-btn:hover {
+    color: #fff;
 }

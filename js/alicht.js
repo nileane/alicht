@@ -5,6 +5,21 @@
  * MIT License
  */
 
+
+/*
+ * SUMMARY:
+ *
+ * 1. Alerts dismiss feature
+ */
+
+
+
+
+/*
+ * 1. Alerts dismiss feature
+ * -------------------------
+ */
+
 function fadeOut(el) {
   el.style.opacity = 1;
 
@@ -24,10 +39,10 @@ function fadeOut(el) {
   tick();
 }
 
-var dismissables = document.querySelectorAll(".dismissable");
+var dismissables = document.querySelectorAll(".dismiss");
 for (var i = 0; i < dismissables.length; i++) {
   thelink = document.createElement("a");
-  thelink.className += ' dismissbtn';
+  thelink.className += 'dismiss-btn';
 
   thelink.onclick = function() {
     fadeOut(this.parentNode);
