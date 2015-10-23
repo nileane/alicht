@@ -502,12 +502,8 @@ form textarea:focus {
 }
 form button,
 form input[type="submit"] {
-    font-size: 80%;
-    font-family: "Exo", 'Fira Mono', monospace;
-    text-transform: uppercase;
-    padding: .5em 1em .4em !important;
-    font-weight: 800;
-    line-height: 1.7;
+    font-size: 100%;
+    border-radius: 3px;
 }
 
 .button,
@@ -535,7 +531,7 @@ form button.medium {
 }
 .button.bigger,
 form button.bigger {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 .button:hover,
 form button:hover,
