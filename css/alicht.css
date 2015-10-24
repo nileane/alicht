@@ -626,6 +626,7 @@ h1 .avatar {
 
 
 
+
 /*
  * 9. Alerts (Notifications)
  * ---------
@@ -637,6 +638,7 @@ h1 .avatar {
     padding: .6em 2.2em;
     position: relative;
     color: #27DCE9;
+    box-sizing: border-box;
 }
 .alert:before { /* We're using Octicons as labels */
     font: normal normal normal 20px/1 octicons;
