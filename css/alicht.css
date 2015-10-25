@@ -474,6 +474,9 @@ form .wide {
     margin: .2em 0;
     text-align: left;
 }
+.card p:last-of-type {
+    margin-bottom: 0;
+}
 
 
 
