@@ -446,6 +446,9 @@ h1[id] {
     background-color: rgba(34, 34, 34, 0.6);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
 }
+.cover .card.boxed {
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .card.wide,
 form .wide {
     width: 80%;
@@ -462,8 +465,6 @@ form .wide {
 @media screen and (min-width:1170px) {
     .card {
         margin: 0 5px 20px 0;
-    }
-    .card.boxed {
         border-radius: 3px;
     }
 }
@@ -529,7 +530,7 @@ form input[type="submit"] {
 form button,
 form input[type="submit"] {
     display: inline-block;
-    padding: .4rem 1em .5rem;
+    padding: 7px 1em 8px;
     border: 0;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.9);
