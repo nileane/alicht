@@ -175,7 +175,7 @@ body > section.cover {
     width: 100%;
 }
 body > section.cover:first-of-type {
-    padding-top: 180px;
+    padding-top: 110px;
 }
 body > section.cover > * {
     margin-left: auto;
