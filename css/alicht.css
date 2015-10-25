@@ -390,8 +390,9 @@ h3 {
 }
 h4 {
     font-size: 120%;
-}
-h2, h3, h4 {
+    font-weight: 600;
+    text-transform: lowercase;
+    font-variant: small-caps;
 }
 @media screen and (max-width:749px) {
     h1 {
@@ -465,6 +466,12 @@ form .wide {
     .card.boxed {
         border-radius: 3px;
     }
+}
+.card h1,
+.card h2,
+.card h3 {
+    margin: .2em 0;
+    text-align: left;
 }
 
 
