@@ -18,6 +18,7 @@
                 <li><a href="#generic">Generic Markup</a></li>
                 <li><a href="#forms">Forms</a></li>
                 <li><a href="#alerts">Alerts</a></li>
+                <li><a href="#tables">Tables</a></li>
                 <li><a href="https://github.com/archost/alicht"><strong style="font-weight:800;font-variant:small-caps;">alicht</strong> on &nbsp;<span class="octicon octicon-mark-github"></span></a></li>
             </ul>
         </nav>
@@ -213,107 +214,295 @@
 <hr>
 
 <section>
-    <h1>Tables</h1>
+    <h1 id="tables">Tables</h1>
 
-    <h2>Un tableau</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Login</th>
-                <th>Mail</th>
-                <th>Full name</th>
-                <th>Created on</th>
-                <th>Active</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>fabienwang</td>
-                <td>fabienwang@free.fr</td>
-                <td>Fabien Wang</td>
-                <td>2015-10-18 03:25:17</td>
-                <td>1</td>
-                <td>
-                    <form class="inline" name="disable" method="post" action="/admin/users/disable">
-                        <input name="user" value="fabienwang" type="hidden">
-                        <input value="Disable" type="submit">
-                    </form>
-                    <form class="inline" name="changepwd" method="post" action="/admin/users/changepwd">
-                        <input name="user" value="fabienwang" type="hidden">
-                        <input value="Change password" type="submit">
-                    </form>
-                    <form class="inline" name="delete" method="post" action="/admin/users/delete">
-                        <input name="user" value="fabienwang" type="hidden">
-                        <input value="Delete" type="submit">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>morpheus</td>
-                <td>fabienwang@free.fr</td>
-                <td>Fabien Wang</td>
-                <td>2015-10-18 03:25:17</td>
-                <td>1</td>
-                <td>
-                    <form name="disable" method="post" action="/admin/users/disable" style="display:inline">
-                        <input name="user" value="morpheus" type="hidden">
-                        <input value="Disable" type="submit">
-                    </form>
-                    <form name="changepwd" method="post" action="/admin/users/changepwd" style="display:inline">
-                        <input name="user" value="morpheus" type="hidden">
-                        <input value="Change password" type="submit">
-                    </form>
-                    <form name="delete" method="post" action="/admin/users/delete" style="display:inline">
-                        <input name="user" value="morpheus" type="hidden">
-                        <input value="Delete" type="submit">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>neo</td>
-                <td>neo@outlook.com</td>
-                <td>Thomas Anderson</td>
-                <td>2015-10-18 03:26:25</td>
-                <td>1</td>
-                <td>
-                    <form name="disable" method="post" action="/admin/users/disable" style="display:inline">
-                        <input name="user" value="neo" type="hidden">
-                        <input value="Disable" type="submit">
-                    </form>
-                    <form name="changepwd" method="post" action="/admin/users/changepwd" style="display:inline">
-                        <input name="user" value="neo" type="hidden">
-                        <input value="Change password" type="submit">
-                    </form>
-                    <form name="delete" method="post" action="/admin/users/delete" style="display:inline">
-                        <input name="user" value="neo" type="hidden">
-                        <input value="Delete" type="submit">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>younishd</td>
-                <td>neo@outlook.com</td>
-                <td>Thomas Anderson</td>
-                <td>2015-10-18 03:26:25</td>
-                <td>1</td>
-                <td>
-                    <form name="disable" method="post" action="/admin/users/disable" style="display:inline">
-                        <input name="user" value="younishd" type="hidden">
-                        <input value="Disable" type="submit">
-                    </form>
-                    <form name="changepwd" method="post" action="/admin/users/changepwd" style="display:inline">
-                        <input name="user" value="younishd" type="hidden">
-                        <input value="Change password" type="submit">
-                    </form>
-                    <form name="delete" method="post" action="/admin/users/delete" style="display:inline">
-                        <input name="user" value="younishd" type="hidden">
-                        <input value="Delete" type="submit">
-                    </form>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="card-bg">
+        <div class="card">
+            <h2>Three different sizes</h2>
+            <p>To be used with the following classes : <code>table.small</code>, <code>table.medium</code>, and <code>table.big</code>. Medium size is used by default.</p>
+            <table class="small inline">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+              </tr>
+            </table>
+
+
+            <table class="medium inline">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+              </tr>
+            </table>
+
+
+
+            <table class="big inline">
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td>10</td>
+                <td>15</td>
+                <td>20</td>
+                <td>25</td>
+              </tr>
+            </table>
+        </div>
+
+        <div class="card wide">
+            <h2>Alternating rows and columns</h2>
+            <p>Alternating background colors for rows and lines can be set using the following classes :
+                <ul>
+                    <li><code>table.alt-row</code> for rows,</li>                               <li><code>table.alt-col</code> for columns,</li>                             <li>You can also combine both.</li>
+                </ul>
+            </p>
+            <table class="inline">
+                <caption><code>&lt;table&gt;</code></caption>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Full name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fabienwang</td>
+                        <td>Fabien Wang</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>younishd</td>
+                        <td>Younis Bensalah</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schoewilliam</td>
+                        <td>William Dorffer</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="inline alt-row alt-col">
+                <caption><code>&lt;table <strong style="color:#fff;">class="alt-row alt-col"</strong>&gt;</code></caption>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Full name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fabienwang</td>
+                        <td>Fabien Wang</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>younishd</td>
+                        <td>Younis Bensalah</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schoewilliam</td>
+                        <td>William Dorffer</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="inline alt-row">
+                <caption><code>&lt;table <strong style="color:#fff;">class="alt-row"</strong>&gt;</code></caption>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Full name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fabienwang</td>
+                        <td>Fabien Wang</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>younishd</td>
+                        <td>Younis Bensalah</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schoewilliam</td>
+                        <td>William Dorffer</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="inline alt-col">
+                <caption><code>&lt;table <strong style="color:#fff;">class="alt-col"</strong>&gt;</code></caption>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Full name</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>fabienwang</td>
+                        <td>Fabien Wang</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>younishd</td>
+                        <td>Younis Bensalah</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Schoewilliam</td>
+                        <td>William Dorffer</td>
+                        <td>
+                            <form class="inline">
+                                <input value="Ban from Earth" type="submit">
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </section>
 
 
