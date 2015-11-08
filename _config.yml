@@ -1,0 +1,13 @@
+## Configuration file
+
+name: Alicht CSS
+root_url: /
+
+author: William Dorffer
+description: Alicht CSS framework, originally made for archost.eu
+title: Alicht CSS
+
+markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
