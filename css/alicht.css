@@ -150,8 +150,8 @@ body > section {
     position: relative;
 }
 body > section > *:not(h1) {
-    padding-left: 2.2em;
-    padding-right: 2.2em;
+    margin-left: 2.2rem;
+    margin-right: 2.2rem;
 }
 
 
@@ -180,8 +180,8 @@ body > section.cover:first-of-type {
 body > section.cover > * {
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(1170px - 4.4em);
-    padding: 0 2.2em;
+    max-width: calc(1170px - 4.4rem);
+    padding: 0 2.2rem;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
 }
 body > section.cover > .card-bg,
@@ -224,7 +224,7 @@ body > header.static {
     position: absolute;
 }
 body > header > div {
-    padding: 0 2.2em;
+    padding: 0 2.2rem;
     margin: auto;
     display:  -ms-flexbox;
     display: -webkit-flex;
@@ -233,7 +233,8 @@ body > header > div {
             flex-flow: row wrap;
 }
 body > header:not(.full-width) > div {
-    max-width: calc(1170px - 4.4em);
+    max-width: 1170px;
+    box-sizing: border-box;
 }
 body > header .site-title {
     color: #27DCE9;
@@ -499,6 +500,17 @@ form > * {
             flex: 1 1 25%;
     margin: 5px 5px 5px 0;
 }
+table form > * {
+    width: auto;
+        -ms-flex: none;
+    -webkit-flex: none;
+            flex: none;
+    display: inline-block;
+    margin: 5px;
+}
+form.inline {
+    display: inline;
+}
 form input,
 form textarea {
     background-color: #2a2a2a;
@@ -506,7 +518,6 @@ form textarea {
     border: 1px solid #2a2a2a;
     border-radius: 3px;
     font-size: 100%;
-    font-family: "Exo", 'Fira Mono', monospace;
     color: #dedede;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .2);
     -webkit-transition: all ease .2s;
@@ -772,4 +783,25 @@ header + .alert {
 }
 .dismiss-btn:hover {
     color: #fff;
+}
+
+
+
+
+/*
+ * 10. Tables
+ * ----------
+ */
+
+table {
+    display: block;
+    border-collapse: collapse;
+}
+th {
+    text-transform: lowercase;
+    font-variant: small-caps;
+}
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
 }
