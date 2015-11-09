@@ -817,6 +817,7 @@ table.inline {
 }
 table caption {
     text-align: right;
+    background-color: #000;
 }
 
 /* 3 sizes */
