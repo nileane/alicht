@@ -87,17 +87,22 @@ pre {
     background-color: rgba(0, 0, 0, 0.6);
     border-bottom: 3px solid rgba(0, 0, 0, .7);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    overflow: auto;
+    overflow: hidden;
     -webkit-transition: all ease .2s;
             transition: all ease .2s;
+    font-size: 80%;
+    color: #4C9BA1;
+    white-space: normal;
     font-family: "Fira Mono", monospace;
 }
 pre:hover {
     border-bottom: 3px solid rgba(39, 220, 233, 0.6);
+    overflow: auto;
 }
 pre code {
     background: none;
     padding: 0;
+    font-size: 100%;
     display: inline;
 }
 blockquote {
