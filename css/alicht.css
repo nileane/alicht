@@ -126,6 +126,10 @@ body > hr {
 }
 .card hr {
     margin: 2em -2.2rem;
+    border-top: 8px dotted rgba(0, 0, 0, 0.16);
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
 }
 .card hr:last-child {
     display: none;
