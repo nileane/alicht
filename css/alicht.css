@@ -124,6 +124,12 @@ hr {
 body > hr {
     border-color: rgba(0, 0, 0, .8);
 }
+.card hr {
+    margin: 2em -2.2rem;
+}
+.card hr:last-child {
+    display: none;
+}
 .centered {
     text-align: center;
 }
@@ -444,7 +450,7 @@ h1[id] {
         -ms-flex: 1 1 40%;
     -webkit-flex: 1 1 40%;
             flex: 1 1 40%;
-    padding: 2em 2.2em;
+    padding: 2em 2.2rem;
     margin: 0 0 20px;
     overflow: hidden;
     position: relative;
