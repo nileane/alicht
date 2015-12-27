@@ -1,0 +1,35 @@
+---
+layout: default
+title: "Alicht CSS : Cards layout"
+permalink: /cards/
+---
+
+
+<section>
+    <h1 id="cards">Card layout</h1>
+
+    <p>We use a simple card layout, powered by CSS Flexboxes.<br>
+    In the inner layout <em>(ie.</em> <code>&lt;section&gt;</code><em>)</em>, insert a div <code>.card-bg</code>, in which will be arranged the cards <code>.card</code></p>
+
+    <div class="card-bg">
+        <div class="card boxed">
+            <h2>This is a <code>.card.boxed</code> card</h2>
+            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+        </div>
+
+        <div class="card">
+            <h2>A simpler card</h2>
+            <p>This is a simpler card, that has a transparent background, because it only has the <code>.card</code> class.</p>
+            <p>Add the <code>.boxed</code> class to make it look like it is inside a nice floating card.</p>
+            <p>Also, you can add the <code>.wide</code> class to a <code>.card</code> if you want it to always fill the whole line.</p>
+            <p><a class="button" href="#">Oh and that's a button</a></p>
+        </div>
+
+        <div class="card wide">
+            <h2>That's a <code>.card.wide</code> card…</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
+        </div>
+    </div>
+</section>
