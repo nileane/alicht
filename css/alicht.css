@@ -554,10 +554,19 @@ form input[type="submit"] {
     font-size: 100%;
     border-radius: 3px;
 }
-table .button,
+table .button {
+    padding: 5px 1em 6px;
+    border-radius: 3px;
+}
 table form button,
 table form input[type="submit"] {
     padding: 4px 1em 5px;
+}
+table button:before,
+table button:after,
+table .button:after,
+table .button:before {
+    display: none;
 }
 .button,
 form button,
