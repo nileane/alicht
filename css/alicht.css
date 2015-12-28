@@ -268,31 +268,14 @@ body > header .site-title:hover {
 }
 body > header #logo {
     height: 32px;
-    width: 245px;
+    width: auto;
     float: left;
-    margin-top: 14px;
-    color: transparent;
-    background: center top / 100% auto;
-}
-body > header #logo.full {
-    background-image: url('img/archost_logo_sprite_flat_full_32.png');
-    -o-animation-duration: 0s;
-    animation-duration: 0s;
-}
-body > header #logo.min {
-    width: 32px;
-    background-image: url('img/archost_logo_sprite_flat_min_32.png');
+    margin: 12px 0;
+	transition: all .2s;
 }
 body > header #logo:hover {
-    background-position: center bottom;
+	opacity: .8;
 }
-@media screen and (max-width:999px) {
-    body > header #logo.full {
-        width: 32px;
-        background-image: url('img/archost_logo_sprite_flat_min_32.png');
-    }
-}
-
 body > header nav {
     text-align: right;
     padding: 0 2rem;
