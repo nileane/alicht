@@ -1,22 +1,26 @@
 {
     "name": "archost/alicht",
-    "description": "Archost main stylesheet.",
+    "description": "Archost CSS framework.",
     "version": "1.0.0-dev",
     "type": "library",
-    "keywords": ["archost", "hosting", "stylesheet", "css", "template"],
-    "homepage": "http://github.com/archost/alicht",
+    "homepage": "http://alicht.sch.am",
     "license": "MIT",
     "authors":
     [
         {
             "name": "YouniS Bensalah",
-            "email": "younis.bensalah@riseup.net",
+            "email": "younishd@archost.eu",
             "homepage": "http://younishd.fr"
         },
         {
             "name": "William Dorffer",
-            "email": "schoewilliam@schoewilliam.fr",
+            "email": "schoewilliam@archost.eu",
             "homepage": "http://schoewilliam.fr"
+        },
+        {
+            "name": "Fabien Wang",
+            "email": "fabienwang@eliteheberg.fr",
+            "homepage": "http://fabienwang.fr"
         }
     ]
 }

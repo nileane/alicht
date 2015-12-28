@@ -1,8 +1,13 @@
 /*
- * Alicht
- * https://github.com/archost/alicht
- * Copyright (c) 2015 William Dorffer [:schoewilliam]
- * MIT License
+ * This file is part of alicht.
+ *
+ * (c) 2015-2016 Archost
+ *     YouniS Bensalah [:younishd] <younishd@archost.eu>
+ *     William Dorffer [:schoewilliam] <schoewilliam@archost.eu>
+ *     Fabien Wang [:fabienwang] <fabienwang@eliteheberg.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 
@@ -835,4 +840,3 @@ table.alt-row tr:nth-child(odd) {
     background-color: rgba(0, 0, 0, 0.2);
     color: rgba(255, 255, 255, 0.51);
 }
-
