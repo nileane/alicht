@@ -18,12 +18,14 @@
  * 1. General
  * 2. Global Navigation Bar
  * 3. Header
- * 4. Headings/Headlines
+ * 4. Headlines/Headings
  * 5. Layout
- * 6. Forms & Buttons
- * 7. Footer
- * 8. Alerts
- * 9. Tables
+ * 6. Navigation Components
+ * 7. Tiles
+ * 8. Forms & buttons
+ * 9. Footer
+ * 10. Alerts
+ * 11. Tables
  */
 
 
@@ -570,7 +572,7 @@ section {
 
 
 /*
- * 5. Tiles
+ * 7. Tiles
  * --------
  */
 .tile-wrapper {
@@ -651,7 +653,7 @@ section {
 
 
 /*
- * 6. Forms & Buttons
+ * 8. Forms & Buttons
  * ------------------
  */
 
@@ -659,7 +661,7 @@ section {
 
 
 /*
- * 7. Footer
+ * 9. Footer
  * ---------
  */
 footer {
@@ -675,7 +677,7 @@ footer a {
 
 
 /*
- * 8. Alerts
+ * 10. Alerts
  * ---------
  */
 .alert {
@@ -773,7 +775,7 @@ header + .alert {
 
 
 /*
- * 9. Tables
+ * 11. Tables
  * ----------
  */
 
