@@ -123,7 +123,7 @@
 		</ol>
 
 		<blockquote>
-		<p>"Baby, baby, baby oh!"<br>
+		<p>"What do you meaaan?"<br>
 		— Justin Bieber.</p>
 		</blockquote>
 	</section>
@@ -149,22 +149,35 @@
     <p>Forms also use Flexboxes, just like the tile layout.<br>
     It makes responsive designed forms easy to create and to set up.</p>
 
-
-    <div class="tile-wrapper">
-        <div class="tile boxed wide">
+    <div class="tile-wrapper alternate">
+        <div class="tile wide">
             <h2>A Signup form</h2>
             <form method="post" action="?q=signup">
-                <input type="text" name="username" placeholder="Cool username..." required>
+                <input class="one-third" type="text" name="username" placeholder="Cool username..." required>
                 <input type="email" name="email" placeholder="Your email..." required>
                 <button type="submit">Send</button>
             </form>
         </div>
 
-        <div class="tile boxed">
-            <h2>A Comment-type submission form</h2>
+        <div class="tile wide">
             <form method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
+                <textarea type="email" name="comment" placeholder="Type in your comment"></textarea>
+                <button type="submit">Send comment</button>
+            </form>
+        </div>
+
+        <div class="tile wide">
+            <form method="post">
+               	<div>
+               		<span class="input-label">Username</span>
+               		<input type="text" name="username" placeholder="Username" required>
+               	</div>
+               	<div>
+               		<span class="input-label">Email</span>
+               		<input type="email" name="email" placeholder="Email" required>
+               	</div>
                 <textarea type="email" name="comment" placeholder="Type in your comment"></textarea>
                 <button type="submit">Send comment</button>
             </form>
