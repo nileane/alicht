@@ -422,6 +422,7 @@ section {
     border-radius: 3px;
     margin-right: 1rem;
     position: absolute;
+	z-index: 2;
 }
 .side-nav.right {
 	right: 0;
