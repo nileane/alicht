@@ -149,41 +149,28 @@
     <p>Forms also use Flexboxes, just like the tile layout.<br>
     It makes responsive designed forms easy to create and to set up.</p>
 
-    <div class="tile-wrapper alternate">
-        <div class="tile">
-            <h2>A Signup form</h2>
-            <form method="post" action="?q=signup">
-                <input class="one-third" type="text" name="username" placeholder="Cool username..." required>
-                <input name="email" placeholder="Your email..." required>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+	<h3>Form with placeholders</h3>
+	<form method="post">
+		<input type="text" name="username" placeholder="Username" required>
+		<input type="email" name="email" placeholder="Email" required>
+		<textarea name="comment" placeholder="Type in your comment"></textarea>
+		<button type="submit">Send comment</button>
+	</form>
 
-        <div class="tile">
-            <form method="post">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="comment" placeholder="Type in your comment"></textarea>
-                <button type="submit">Send comment</button>
-            </form>
-        </div>
-
-        <div class="tile">
-            <form method="post">
-               	<div>
-               		<span class="input-label">Username</span>
-               		<input type="text" name="username" required>
-               	</div>
-               	<div>
-               		<span class="input-label">Email</span>
-               		<input type="email" name="email" required>
-               	</div>
-               	<span class="input-label">Type your awesome text</span>
-                <textarea name="comment"></textarea>
-                <button type="submit">Send comment</button>
-            </form>
-        </div>
-    </div>
+	<h3>Form with labels</h3>
+	<form method="post">
+		<div>
+			<span class="input-label">Username</span>
+			<input type="text" name="username" required>
+		</div>
+		<div>
+			<span class="input-label">Email</span>
+			<input type="email" name="email" required>
+		</div>
+		<span class="input-label">Type your awesome text</span>
+		<textarea name="comment"></textarea>
+		<button type="submit">Send comment</button>
+	</form>
 </section>
 <section>
     <h1 id="alerts">Alerts</h1>

@@ -700,8 +700,13 @@ button:hover {
 	color: #27DCE9;
 }
 .input-label {
-	margin: .4rem .4rem -.4rem;
-	display: block;
+    margin: .4rem .4rem -.4rem;
+	color: rgba(0, 0, 0, .5);
+    display: block;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: .05rem;
 }
 
 
