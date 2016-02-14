@@ -15,26 +15,15 @@
  * SUMMARY:
  *
  * 0. Imports
- * 1. General declarations / Body
- * 2. Outer layout
- * 2.1 Sections
- * 3. Global header & Navigation
+ * 1. General
+ * 2. Global Navigation Bar
+ * 3. Header
  * 4. Headings/Headlines
- * 5. Cards-Layout / Inner Layout
+ * 5. Layout
  * 6. Forms & Buttons
  * 7. Footer
- * 8. Profile
- * 9. Alerts (Notifications)
- * 10. Tables
- */
-
-/*
- * NOTE about @media queries:
- *
- * @media queries are dispatched in the file, in the sections where they belong, to which they apply.
- * We're trying here to use only 2 breaking point, which are:
- *    > (min-width:750px) or (max-width:749px)
- *    > (min-width:999px) or (max-width:1170px)
+ * 8. Alerts
+ * 9. Tables
  */
 
 
@@ -43,7 +32,6 @@
  * 0. Imports
  * ----------
  */
-
 @import url('normalize.css');
 @import url('fonts/exo2/exo2.css');
 @import url('fonts/octicons/octicons.css');
@@ -51,10 +39,9 @@
 
 
 /*
- * 1. General declarations / Body
- * ------------------------------
+ * 1. General
+ * ----------
  */
-
 body {
     background: #E0E0E0;
     font: 11pt 'Exo2', sans-serif;
@@ -148,18 +135,11 @@ img {
 }
 
 
-/*
- * 2. Outer layout
- * ---------------
- */
-
-
 
 /*
- * 3. Navigation Bar
- * -----------------
+ * 2. Global Navigation Bar
+ * ------------------------
  */
-
 #topbar {
 	position: absolute;
 		top: 0; left: 0; right: 0;
@@ -212,8 +192,7 @@ img {
 		-ms-flex: 1 1 auto;
         	flex: 1 1 auto;
 }
-#nav a,
-#nav span.subnav-title {
+#nav a {
     display: inline-block;
     margin: 0;
     padding: 1em 10px;
@@ -224,52 +203,12 @@ img {
     font-weight: 800;
 	transition: all .2s;
 }
-#nav a,
-#nav span.subnav-title {
+#nav a {
     color: rgba(255, 255, 255, .6);
 }
-#nav a:hover,
-#nav span.subnav-title:hover {
+#nav a:hover {
     color: rgba(255, 255, 255, .9);
 }
-#nav .subnav-title {
-    cursor: pointer;
-    position: relative;
-}
-#nav .subnav {
-    position: absolute;
-        right: -1.8em;
-        left: -1.8em;
-        top: 2.5em;
-    font-size: 130%;
-    background-color: rgba(18, 25, 42, 0.92);
-    padding: .6em 1em;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-    -webkit-transform: translate(0, -20px);
-        -ms-transform: translate(0, -20px);
-            transform: translate(0, -20px);
-    opacity: 0;
-    -webkit-transition: all .3s;
-            transition: all .3s;
-    overflow: hidden;
-    pointer-events: none;
-}
-#nav .subnav-title:hover .subnav {
-    opacity: 1;
-    -webkit-transform: translate(0);
-        -ms-transform: translate(0);
-            transform: translate(0);
-    pointer-events: all;
-}
-#nav .subnav a {
-    display: block !important;
-}
-#nav .subnav a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
 
 #nav select {
     margin: 0;
@@ -294,7 +233,6 @@ img {
 #nav select:focus {
     opacity: .7;
 }
-
 #nav select > option {
     background-color: #fafafa;
     color: rgba(0, 0, 0, .8);
@@ -317,10 +255,9 @@ img {
 
 
 /*
- * 4. Header
+ * 3. Header
  * ---------
  */
-
 header {
 	background: url(img/noise.png) repeat center / auto #212121;
     box-shadow: none;
@@ -328,8 +265,6 @@ header {
     position: relative;
     overflow: hidden;
 	text-align: center;
-	position: relative;
-    overflow: hidden;
 	clear: both;
 	box-sizing: border-box;
 }
@@ -373,8 +308,6 @@ header > div {
 	padding: 0 2rem;
 	box-sizing: border-box;
 }
-
-
 h1.home-head {
 	margin: 0;
 	text-shadow: 0 2px rgba(0, 0, 0, .2), 0 1px 15px rgba(0, 0, 0, .3);
@@ -387,10 +320,9 @@ header .meta {
 
 
 /*
- * 5. Headlines/Headings
+ * 4. Headlines/Headings
  * ---------------------
  */
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Exo2", 'Fira Mono', sans-serif;
     font-weight: normal;
@@ -439,11 +371,11 @@ h4 {
 }
 
 
-/*
- * 6. Inner-Layout
- * ---------------
- */
 
+/*
+ * 5. Layout
+ * ---------
+ */
 .wrapper {
     max-width: 1200px;
     margin: -2em auto 0;
@@ -480,8 +412,8 @@ section {
 
 
 /*
- * 6. Sidebar Navigation
- * ---------------------
+ * 6. Navigation Components
+ * ------------------------
  */
 .sidenav {
     background-color: rgb(27, 27, 27);
@@ -586,10 +518,9 @@ section {
 
 
 /*
- * 5. Tiles-Layout
- * ---------------
+ * 5. Tiles
+ * --------
  */
-
 .tile-wrapper {
     padding: 1.2rem 0;
 	margin: 0 -2.3rem;
@@ -679,7 +610,6 @@ section {
  * 7. Footer
  * ---------
  */
-
 footer {
     font-size: 100%;
     margin: 120px 0 50px;
@@ -693,18 +623,9 @@ footer a {
 
 
 /*
- * 8. Profile
- * ----------
- */
-
-
-
-
-/*
- * 9. Alerts (Notifications)
+ * 8. Alerts
  * ---------
  */
-
 .alert {
     margin: 1.8rem auto;
     max-width: calc(1170px - 4.4em);
@@ -799,9 +720,8 @@ header + .alert {
 
 
 
-
 /*
- * 10. Tables
+ * 9. Tables
  * ----------
  */
 
