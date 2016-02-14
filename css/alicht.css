@@ -80,16 +80,13 @@ pre {
     padding: 10px 1.9rem;
 	margin: 0;
 	background-color: #333;
-    overflow: hidden;
+    overflow: auto;
     -webkit-transition: all ease .2s;
             transition: all ease .2s;
     font-size: 80%;
     color: #dbdbdb;
 	border-radius: 3px;
     font-family: "Fira Mono", monospace;
-}
-pre:hover {
-    overflow: auto;
 }
 pre code {
     background: none;
@@ -626,7 +623,8 @@ section {
 }
 
 /* Tile formatting */
-.tile-wrapper .tile.wide {
+.tile-wrapper .tile.wide,
+.tile-wrapper.alternate .tile {
     width: 100%;
 	box-sizing: border-box
     overflow: hidden;
@@ -656,7 +654,57 @@ section {
  * 8. Forms & Buttons
  * ------------------
  */
-
+form {
+	margin: 0 -.4rem;
+}
+input,
+textarea,
+button {
+	display: block;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+    border: 0;
+    color: #333;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+	transition: all .2s;
+	margin: .4rem .4rem .8rem;
+	vertical-align: top;
+}
+input:focus,
+textarea:focus {
+	color: #000;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27DCE9;
+}
+input,
+textarea {
+	min-width: 50%;
+	max-width: 100%
+}
+button {
+	background-color: rgb(27, 27, 27);
+	color: #fff;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-weight: 700;
+	min-width: 20%;
+	-webkit-transition: all .3s;
+			transition: all .3s;
+}
+button:hover {
+	background-color: #111;
+	color: #27DCE9;
+}
+.input-label {
+    margin: .4rem .4rem -.4rem;
+	color: rgba(0, 0, 0, .5);
+    display: block;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-weight: 700;
+    letter-spacing: .05rem;
+}
 
 
 
@@ -681,13 +729,14 @@ footer a {
  * ---------
  */
 .alert {
-    margin: 1.8rem auto;
+    margin: .8rem auto;
     max-width: calc(1170px - 4.4em);
     padding: .6em 2.2em;
     position: relative;
-    color: #27DCE9;
+    color: #333;
     box-sizing: border-box;
 	z-index: 1;
+	display: inline-block;
 }
 .alert:before { /* We're using Octicons as labels */
     font: normal normal normal 20px/1 octicons;
@@ -707,7 +756,8 @@ footer a {
     content: " ";
     position: absolute;
     top: 0; bottom: 0; right: 0; left: -500%;
-    background-color: rgb(36, 71, 75);
+	box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: rgb(183, 222, 225);
     -webkit-transform: skewX(-10deg);
         -ms-transform: skewX(-10deg);
             transform: skewX(-10deg);
@@ -715,6 +765,9 @@ footer a {
 }
 header + .alert {
     margin-top: 5em;
+}
+.alert.wide {
+	display: block;
 }
 .alert.fadin {
     -webkit-animation: fadin 1.3s 1;
@@ -724,20 +777,20 @@ header + .alert {
     color: rgb(41, 140, 98);
 }
 .alert.success:after {
-    background-color: rgba(39, 233, 151, 0.45);
+    background-color: rgb(187, 225, 183);
 }
 .alert.success:before {
     color: rgb(41, 140, 98);
     content: '\f03a'; /* ie. .octicon-check:before in css/fonts/octicons/octicons.css */
 }
 .alert.error {
-    color: #BF3C3C;
+    color: #782B2B;
 }
 .alert.error:after {
     background-color: rgba(233, 39, 39, 0.4);
 }
 .alert.error:before {
-    color: #BF3C3C;
+    color: #782B2B;
     content: '\f091'; /* ie. .octicon-bug:before in css/fonts/octicons/octicons.css */
 }
 .alert.warning {
