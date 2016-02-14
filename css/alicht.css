@@ -656,7 +656,52 @@ section {
  * 8. Forms & Buttons
  * ------------------
  */
-
+form {
+	margin: 0 -.4rem;
+}
+input,
+textarea,
+button {
+	display: block;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+    border: 0;
+    color: #333;
+    padding: .5rem 1rem;
+    border-radius: 2px;
+	transition: all .2s;
+	margin: .4rem .4rem .8rem;
+	vertical-align: top;
+}
+input:focus,
+textarea:focus {
+	color: #000;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27DCE9;
+}
+input,
+textarea {
+	min-width: 50%;
+	max-width: 100%
+}
+button {
+	background-color: rgb(27, 27, 27);
+	color: #fff;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-weight: 700;
+	min-width: 20%;
+	-webkit-transition: all .3s;
+			transition: all .3s;
+}
+button:hover {
+	background-color: #111;
+	color: #27DCE9;
+}
+.input-label {
+	margin: .4rem .4rem -.4rem;
+	display: block;
+}
 
 
 

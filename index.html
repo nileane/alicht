@@ -150,35 +150,36 @@
     It makes responsive designed forms easy to create and to set up.</p>
 
     <div class="tile-wrapper alternate">
-        <div class="tile wide">
+        <div class="tile">
             <h2>A Signup form</h2>
             <form method="post" action="?q=signup">
                 <input class="one-third" type="text" name="username" placeholder="Cool username..." required>
-                <input type="email" name="email" placeholder="Your email..." required>
+                <input name="email" placeholder="Your email..." required>
                 <button type="submit">Send</button>
             </form>
         </div>
 
-        <div class="tile wide">
+        <div class="tile">
             <form method="post">
                 <input type="text" name="username" placeholder="Username" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <textarea type="email" name="comment" placeholder="Type in your comment"></textarea>
+                <textarea name="comment" placeholder="Type in your comment"></textarea>
                 <button type="submit">Send comment</button>
             </form>
         </div>
 
-        <div class="tile wide">
+        <div class="tile">
             <form method="post">
                	<div>
                		<span class="input-label">Username</span>
-               		<input type="text" name="username" placeholder="Username" required>
+               		<input type="text" name="username" required>
                	</div>
                	<div>
                		<span class="input-label">Email</span>
-               		<input type="email" name="email" placeholder="Email" required>
+               		<input type="email" name="email" required>
                	</div>
-                <textarea type="email" name="comment" placeholder="Type in your comment"></textarea>
+               	<span class="input-label">Type your awesome text</span>
+                <textarea name="comment"></textarea>
                 <button type="submit">Send comment</button>
             </form>
         </div>
