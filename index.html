@@ -9,133 +9,127 @@
 </head>
 <body>
 
-<header>
+<div id="topbar">
+	<div>
+		<div id="head">
+			Alicht
+			<!--<img src="img/archost_logo_20150419_dark_flat_full_text.png">-->
+		</div>
+		<nav id="nav" class="righted">
+			<div class="mobileoff">
+					<a href="#"><span>Qui sommes-nous ?</span></a>
+					<a href="#"><span>Log In</span></a>
+			</div>
+
+			<select class="mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
+				<option value="#" selected="selected">Menu</option>
+					<option value="#">Qui sommes-nous ?</option>
+					<option value="#">Log In</option>
+			</select>
+		</nav>
+	</div>
+</div>
+
+<header class="medium cover" style="background-image:url(img/nonamericanhands.jpg)">
     <div>
-        <a href="#"><h1 class="site-title">Alicht</h1></a>
-		<!-- <a href="#"><div><img id="logo" src="img/archost_logo_20150419_dark_flat_full_text.png" alt="Archost"></div></a> -->
-        <nav>
-            <ul>
-                <li><a href="#cards">Card layout</a></li>
-                <li><a href="#generic">Generic Markup</a></li>
-                <li><a href="#forms">Forms</a></li>
-                <li><a href="#alerts">Alerts</a></li>
-                <li><a href="#tables">Tables</a></li>
-                <li><a href="https://github.com/archost/alicht"><strong style="font-weight:800;font-variant:small-caps;">alicht</strong> on &nbsp;<span class="octicon octicon-mark-github"></span></a></li>
-            </ul>
-        </nav>
+        <h1 class="home-head">
+        	<!--<img class="logo" src="" alt="logo">-->
+        	Alicht
+        </h1>
+        <div class="meta">
+            <span class="small">Pour un enseignement public, gratuit, critique et populaire.</span>
+        </div>
     </div>
 </header>
 
-<section class="cover" style="background-image:url(img/nonamericanhands.jpg)">
-    <h1>Etwas Licht, bitte.</h1>
+<div class="wrapper">
+	<nav class="sidenav">
+		<span class="small-title">Navigation Title</span>
+		<ul>
+			<li><a href="#">Lorem ipsum dolor sit amet</a></li>
+			<li class="active"><a href="#">Nam tincidunt congue enim</a>
+				<ul>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+					<li><a href="#">Lorem Ipsum</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Ut turpis felis</a>
+				<ul>
+					<li><a href="#">Vivamus fermentum</a></li>
+					<li><a href="#">Vivamus fermentum</a></li>
+					<li><a href="#">Vivamus fermentum</a></li>
+					<li><a href="#">Vivamus fermentum</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Lorem ipsum</a></li>
+			<li><a href="#">Nam tincidunt congue enim</a></li>
+			<li><a href="#">Ut turpis felis</a></li>
+		</ul>
+	</nav>
+	<section>
+		<h1>Mauris vitae</h1>
+		<div class="tile-wrapper alternate">
+			<div class="tile">
+				<h4>Septimo Chimaera</h4>
+				<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.</p>
+			</div>
+			<div class="tile shadow">
+				<h4>Septimo Chimaera</h4>
+				<p>Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.</p>
+			</div>
+		</div>
+	</section>
+	<section>
+		<h1>H1 Heading</h1>
+		<h2>H2 Heading</h2>
+		<h3>H3 Heading</h3>
+		<h4>H4 Heading</h4>
 
-    <div class="card-bg">
-        <div class="card">
-            <h2>This is a card</h2>
-            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
-        </div>
+		<p>We want to write some text <em>in italic</em>, but also sometimes <strong>in bold</strong> variants.</p>
 
-        <div class="card">
-            <h2>This is a card</h2>
-            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-            <p><a href=# class="button">Download Alicht.zip</a>
-            </p>
-        </div>
+		<ul>
+			<li>First item</li>
+			<li>Second, quite longer, item in this list</li>
+			<li>OMGCSS</li>
+		</ul>
 
-        <div class="card boxed">
-            <h1>I had a dream.</h1>
-            <h2>And I hope I'll never have it again.</h2>
-            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-            <p><a href=# class="button">Have one too.</a>
-            </p>
-        </div>
-    </div>
-</section>
+		<ol>
+			<li>Ordinal lists, shall we too?</li>
+			<li>Sure, why not ?</li>
+			<li>Shake my booty, pls.</li>
+		</ol>
 
-<section>
-    <h1 id="cards">Card layout</h1>
+		<blockquote>
+		<p>"Baby, baby, baby oh!"<br>
+		— Justin Bieber.</p>
+		</blockquote>
+	</section>
+</div>
 
-    <p>We use a simple card layout, powered by CSS Flexboxes.<br>
-    In the inner layout <em>(ie.</em> <code>&lt;section&gt;</code><em>)</em>, insert a div <code>.card-bg</code>, in which will be arranged the cards <code>.card</code></p>
-
-    <div class="card-bg">
-        <div class="card boxed">
-            <h2>This is a <code>.card.boxed</code> card</h2>
-            <p>Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <p>Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
-        </div>
-
-        <div class="card">
-            <h2>A simpler card</h2>
-            <p>This is a simpler card, that has a transparent background, because it only has the <code>.card</code> class.</p>
-            <p>Add the <code>.boxed</code> class to make it look like it is inside a nice floating card.</p>
-            <p>Also, you can add the <code>.wide</code> class to a <code>.card</code> if you want it to always fill the whole line.</p>
-            <p><a class="button" href="#">Oh and that's a button</a></p>
-        </div>
-
-        <div class="card wide">
-            <h2>That's a <code>.card.wide</code> card…</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit.</p>
-        </div>
-    </div>
-</section>
-
-<hr>
-
-<section>
-    <h1 id="generic">Generic Markup</h1>
-    <p>This is to demo some of the most basic styles for all sorts of markups.</p>
-
-    <div class="card-bg">
-        <div class="card boxed">
-            <h1>H1 Heading</h1>
-            <h2>H2 Heading</h2>
-            <h3>H3 Heading</h3>
-            <h4>H4 Heading</h4>
-
-            <p>We want to write some text <em>in italic</em>, but also sometimes <strong>in bold</strong> variants.</p>
-
-            <ul>
-                <li>First item</li>
-                <li>Second, quite longer, item in this list</li>
-                <li>OMGCSS</li>
-            </ul>
-
-            <ol>
-                <li>Ordinal lists, shall we too?</li>
-                <li>Sure, why not ?</li>
-                <li>Shake my booty, pls.</li>
-            </ol>
-
-            <blockquote>
-            <p>"Baby, baby, baby oh!"<br>
-            — Justin Bieber.</p>
-            </blockquote>
-        </div>
-
-        <div class="card">
-            <p>Also, image inclusions work quite well too!</p>
-            <p>Here's a small one<br>
-            <img src="css/img/archost_logo_sprite_flat_full_32.png" alt="Archost Logo"></p>
+<header class="small cover dim righted" style="background-image:url(img/hammer.jpg)">
+    <div>
+        <h1 class="home-head">
+        	<!--<img class="logo" src="" alt="logo">-->
+        	Alicht
+        </h1>
+        <div class="meta">
+            <span class="small">Pour un enseignement public, gratuit, critique et populaire.</span>
         </div>
     </div>
-</section>
-
-<hr>
+</header>
+<div class="wrapper">
 
 <section>
     <h1 id="forms">Forms</h1>
 
-    <p>Forms also use Flexboxes, just like the card layout.<br>
+    <p>Forms also use Flexboxes, just like the tile layout.<br>
     It makes responsive designed forms easy to create and to set up.</p>
 
 
-    <div class="card-bg">
-        <div class="card boxed wide">
+    <div class="tile-wrapper">
+        <div class="tile boxed wide">
             <h2>A Signup form</h2>
             <form method="post" action="?q=signup">
                 <input type="text" name="username" placeholder="Cool username..." required>
@@ -144,7 +138,7 @@
             </form>
         </div>
 
-        <div class="card boxed">
+        <div class="tile boxed">
             <h2>A Comment-type submission form</h2>
             <form method="post">
                 <input type="text" name="username" placeholder="Username" required>
@@ -155,17 +149,15 @@
         </div>
     </div>
 </section>
-
-<hr>
-
 <section>
     <h1 id="alerts">Alerts</h1>
 
-    <div class="card-bg">
-        <div class="card boxed wide">
+    <div class="tile-wrapper alternate">
+        <div class="tile wide">
             <p>Those come useful when you need to display some short, but important alerts or notifications. They need to be simple and visible.</p>
             <p>There are 4 types of alert boxes: <code>.alert</code>, <code>.alert.success</code>, <code>.alert.error</code>, <code>.alert.warning</code>.<br>You can see what they look like below, in this order.</p>
-            <style>.alert.fadin, .alert.fadin:before {
+            <style>
+			.alert.fadin, .alert.fadin:before {
                 -webkit-animation-duration: 1.6s;
                 animation-duration: 1.6s;
                 -webkit-animation-iteration-count: infinite;
@@ -173,19 +165,12 @@
             }</style>
         </div>
 
-        <div class="card wide">
+        <div class="tile wide">
             <div class="alert">Lorem ipsum dolor sit amet</div>
             <pre><code>&lt;div class="<strong style="color:#27DCE9">alert</strong>"&gt;Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
         </div>
 
-        <div class="card wide">
-            <div class="alert dismiss">Lorem ipsum dolor sit amet</div>
-            <p><em>This alert can be dismissed.</em>
-            <br>Adding the <code>.dismiss</code> class enables a close button to the left of the alert.</p>
-            <pre><code>&lt;div class="alert <strong style="color:#27DCE9">dismiss</strong>"&gt;Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
-        </div>
-
-        <div class="card wide">
+        <div class="tile wide">
             <div class="alert fadin">Lorem ipsum dolor sit amet</div>
             <p><em>The animation is here looped and made slower for the purpose of the demo.</em>
             <br>They also come with a nice appearing animation if you add the <code>.fadin</code> class.</p>
@@ -193,317 +178,25 @@
         </div>
 
 
-        <div class="card wide">
+        <div class="tile wide">
             <div class="alert success">Lorem ipsum dolor sit amet</div>
             <pre><code>&lt;div class="alert <strong style="color: rgb(39, 233, 151);">success</strong>"&gt;Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
         </div>
 
 
-        <div class="card wide">
+        <div class="tile wide">
             <div class="alert error">Lorem ipsum dolor sit amet</div>
             <pre><code>&lt;div class="alert <strong style="color:#ED7F7F">error</strong>"&gt;Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
         </div>
 
 
-        <div class="card wide">
+        <div class="tile wide">
             <div class="alert warning">Lorem ipsum dolor sit amet</div>
             <pre><code>&lt;div class="alert <strong style="color:#EDB17F">warning</strong>"&gt;Lorem ipsum dolor sit amet&lt;/div&gt;</code></pre>
         </div>
     </div>
 </section>
-
-<hr>
-
-<section>
-    <h1 id="tables">Tables</h1>
-
-    <div class="card-bg">
-        <div class="card">
-            <h2>Three different sizes</h2>
-            <p>To be used with the following classes : <code>table.small</code>, <code>table.medium</code>, and <code>table.big</code>. Medium size is used by default.</p>
-
-            <table class="small inline">
-              <caption><code>&lt;table <strong style="color:#fff;">class="small"</strong>&gt;</code></caption>
-              <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-              <tr>
-                <th>2</th>
-                <td>4</td>
-                <td>6</td>
-                <td>8</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <th>3</th>
-                <td>6</td>
-                <td>9</td>
-                <td>12</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <th>4</th>
-                <td>8</td>
-                <td>12</td>
-                <td>16</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <th>5</th>
-                <td>10</td>
-                <td>15</td>
-                <td>20</td>
-                <td>25</td>
-              </tr>
-            </table>
-            <table class="medium inline">
-              <caption><code>&lt;table <strong style="color:#fff;">class="medium"</strong>&gt;</code></caption>
-              <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-              <tr>
-                <th>2</th>
-                <td>4</td>
-                <td>6</td>
-                <td>8</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <th>3</th>
-                <td>6</td>
-                <td>9</td>
-                <td>12</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <th>4</th>
-                <td>8</td>
-                <td>12</td>
-                <td>16</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <th>5</th>
-                <td>10</td>
-                <td>15</td>
-                <td>20</td>
-                <td>25</td>
-              </tr>
-            </table>
-            <table class="big inline">
-              <caption><code>&lt;table <strong style="color:#fff;">class="big"</strong>&gt;</code></caption>
-              <tr>
-                <th>1</th>
-                <th>2</th>
-                <th>3</th>
-                <th>4</th>
-                <th>5</th>
-              </tr>
-              <tr>
-                <th>2</th>
-                <td>4</td>
-                <td>6</td>
-                <td>8</td>
-                <td>10</td>
-              </tr>
-              <tr>
-                <th>3</th>
-                <td>6</td>
-                <td>9</td>
-                <td>12</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <th>4</th>
-                <td>8</td>
-                <td>12</td>
-                <td>16</td>
-                <td>20</td>
-              </tr>
-              <tr>
-                <th>5</th>
-                <td>10</td>
-                <td>15</td>
-                <td>20</td>
-                <td>25</td>
-              </tr>
-            </table>
-        </div>
-
-        <div class="card wide">
-            <h2>Alternating rows and columns</h2>
-            <p>Alternating background colors for rows and lines can be set using the following classes :
-                <ul>
-                    <li><code>table.alt-row</code> for rows,</li>                               <li><code>table.alt-col</code> for columns,</li>                             <li>You can also combine both.</li>
-                </ul>
-            </p>
-            <table class="inline">
-                <caption><code>&lt;table&gt;</code></caption>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Full name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>fabienwang</td>
-                        <td>Fabien Wang</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>younishd</td>
-                        <td>Younis Bensalah</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Schoewilliam</td>
-                        <td>William Dorffer</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="inline alt-row alt-col">
-                <caption><code>&lt;table <strong style="color:#fff;">class="alt-row alt-col"</strong>&gt;</code></caption>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Full name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>fabienwang</td>
-                        <td>Fabien Wang</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>younishd</td>
-                        <td>Younis Bensalah</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Schoewilliam</td>
-                        <td>William Dorffer</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="inline alt-row">
-                <caption><code>&lt;table <strong style="color:#fff;">class="alt-row"</strong>&gt;</code></caption>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Full name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>fabienwang</td>
-                        <td>Fabien Wang</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>younishd</td>
-                        <td>Younis Bensalah</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Schoewilliam</td>
-                        <td>William Dorffer</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="inline alt-col">
-                <caption><code>&lt;table <strong style="color:#fff;">class="alt-col"</strong>&gt;</code></caption>
-                <thead>
-                    <tr>
-                        <th>Username</th>
-                        <th>Full name</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>fabienwang</td>
-                        <td>Fabien Wang</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>younishd</td>
-                        <td>Younis Bensalah</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Schoewilliam</td>
-                        <td>William Dorffer</td>
-                        <td>
-                            <form class="inline">
-                                <input value="Ban from Earth" type="submit">
-                            </form>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+</div>
 
 
 <footer>
