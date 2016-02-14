@@ -415,51 +415,56 @@ section {
  * 6. Navigation Components
  * ------------------------
  */
-.sidenav {
-    background-color: rgb(27, 27, 27);
+.side-nav,
+.inline-nav {
+	background-color: rgb(27, 27, 27);
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+.side-nav { /* Sidebar Navigation component */
     width: 300px;
     min-height: 500px;
 	padding: 3rem 0;
     border-radius: 3px;
     margin-right: 1rem;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
     position: absolute;
 }
-.sidenav.right {
+.side-nav.right {
 	right: 0;
 	margin-right: 0;
 	margin-left: 1rem;
 }
-.sidenav > *:not(ul) {
+.side-nav > *:not(ul) {
 	padding: .8rem 2rem;
 	margin: 0;
 }
-.sidenav ul {
+.side-nav ul,
+.inline-nav ul {
 	padding: 0;
+	list-style: none;
 }
-.sidenav li {
+.side-nav li {
 	list-style: none;
 	display: block;
 	border-bottom: 1px solid rgba(0, 0, 0, .3);
 }
-.sidenav li a {
+.side-nav li a {
 	display: block;
 	color: rgba(255, 255, 255, .7);
 	padding: .8rem 2rem;
-	-webkit-transition: all .2s;
-			transition: all .2s;
+    -webkit-transition: all .3s;
+			transition: all .3s;
 }
-.sidenav li a:hover {
+.side-nav li a:hover {
 	background-color: rgba(0, 0, 0, .3);
 	color: #1BB4BF;
 }
-.sidenav li.active {
+.side-nav li.active {
 	background-color: #111;
 }
-.sidenav li.active > a {
+.side-nav li.active > a {
 	color: #1BB4BF;
 }
-.sidenav li.active > a:before {
+.side-nav li.active > a:before {
     position: absolute;
     content: " ";
     width: .35rem;
@@ -469,50 +474,101 @@ section {
     left: 0;
     margin-top: 0.2rem;
 }
-.sidenav ul ul {
+.side-nav ul ul {
     font-size: 80%;
 }
-.sidenav ul ul li {
+.side-nav ul ul li {
 	border: none;
 	box-shadow: none;
 }
-.sidenav ul ul li a {
+.side-nav ul ul li a {
 	color: #777;
     padding: .5rem 2rem .5rem 3rem;
     border: none;
     box-shadow: none;
 }
 
-.sidenav:not(.right) ~ section {
+.side-nav:not(.right) ~ * {
     margin-left: 320px;
 }
-.sidenav.right ~ section {
+.side-nav.right ~ * {
 	margin-right: 320px;
 }
 
 @media screen and (max-width:999px) {
-	.sidenav {
+	.side-nav {
     	width: 200px;
 	}
-	.sidenav:not(.right) ~ section {
+	.side-nav:not(.right) ~ * {
     	margin-left: 220px;
 	}
-	.sidenav.right ~ section {
+	.side-nav.right ~ * {
 		margin-right: 220px;
 	}
 }
 @media screen and (max-width:649px) {
-	.sidenav {
+	.side-nav {
 		position: static;
 		width: auto;
 		margin: 0 0 1.5rem;
 	}
-	.sidenav:not(.right) ~ section {
+	.side-nav:not(.right) ~ * {
     	margin-left: 0;
 	}
-	.sidenav.right ~ section {
+	.side-nav.right ~ * {
 		margin-right: 0;
 	}
+}
+
+.inline-nav { /* Navigation Bar component */
+    margin: 0 auto 1.5em;
+    border-radius: 2px;
+}
+.inline-nav ul {
+	margin: 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.inline-nav li {
+    display: inline-block;
+	position: relative;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+}
+.inline-nav a {
+	display: block;
+	padding: .5rem 1rem;
+	color: rgba(255, 255, 255, .7);
+	-webkit-transition: all .3s;
+			transition: all .3s;
+}
+.inline-nav li a:hover {
+	background-color: rgba(0, 0, 0, .3);
+	color: #1BB4BF;
+}
+.inline-nav ul li ul {
+    position: absolute;
+	display: none;
+    top: 2.2rem;
+    z-index: 2;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    background-color: rgb(34, 34, 34);
+    border-radius: 2px;
+    width: 10rem;
+}
+.inline-nav ul li:hover ul {
+	display: block;
+	animation: fadin .5s 1;
+}
+.inline-nav ul li ul li {
+	display: block;
+	border: none;
+}
+.inline-nav .small-title {
+	padding: .5rem 1rem;
+	font-size: 100%;
+	border-right: 1px solid rgba(0, 0, 0, .3);
 }
 
 
