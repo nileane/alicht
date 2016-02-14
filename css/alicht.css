@@ -626,7 +626,8 @@ section {
 }
 
 /* Tile formatting */
-.tile-wrapper .tile.wide {
+.tile-wrapper .tile.wide,
+.tile-wrapper.alternate .tile {
     width: 100%;
 	box-sizing: border-box
     overflow: hidden;
