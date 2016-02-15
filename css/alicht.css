@@ -490,10 +490,10 @@ section > div {
     box-shadow: none;
 }
 
-.side-nav:not(.right) ~ * {
+.side-nav:not(.right) ~ *:not(.side-nav) {
     margin-left: 320px;
 }
-.side-nav.right ~ * {
+.side-nav.right ~ *:not(.side-nav) {
 	margin-right: 320px;
 }
 
@@ -501,10 +501,10 @@ section > div {
 	.side-nav {
     	width: 200px;
 	}
-	.side-nav:not(.right) ~ * {
+	.side-nav:not(.right) ~ *:not(.side-nav) {
     	margin-left: 220px;
 	}
-	.side-nav.right ~ * {
+	.side-nav.right ~ *:not(.side-nav) {
 		margin-right: 220px;
 	}
 }
