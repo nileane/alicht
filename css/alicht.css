@@ -743,6 +743,10 @@ button.primary,
 	color: rgba(255, 255, 255, .9);
 	background-color: rgb(27, 27, 27);
 }
+button.primary:hover,
+.button.primary:hover {
+	color: #27DCE9;
+}
 button.success,
 .button.success {
 	color: rgb(41, 140, 98);
