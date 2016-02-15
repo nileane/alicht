@@ -64,6 +64,9 @@ a {
 a:hover {
     color: #27DCE9;
 }
+section a {
+	color: #1BB4BF;
+}
 em {
     opacity: .8;
 }
@@ -403,6 +406,9 @@ section {
     	padding: 3rem 2.8rem;
 	}
 }
+section > div {
+	margin: 3rem 0;
+}
 
 
 
@@ -683,20 +689,6 @@ textarea {
 	min-width: 50%;
 	max-width: 100%
 }
-button {
-	background-color: rgb(27, 27, 27);
-	color: #fff;
-	text-transform: lowercase;
-	font-variant: small-caps;
-	font-weight: 700;
-	min-width: 20%;
-	-webkit-transition: all .3s;
-			transition: all .3s;
-}
-button:hover {
-	background-color: #111;
-	color: #27DCE9;
-}
 .input-label {
     margin: .4rem .4rem -.4rem;
 	color: rgba(0, 0, 0, .5);
@@ -707,6 +699,84 @@ button:hover {
     letter-spacing: .05rem;
 }
 
+/* Buttons Land */
+button,
+.button,
+input[type="submit"] {
+	background-color: #fff;
+	color: #333;
+	padding: .5rem 1rem;
+	margin: .4rem;
+    border-radius: 2px;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-size: 13pt;
+	font-weight: 700;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	display: inline-block;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+			transition: all .3s;
+}
+button:hover,
+.button:hover {
+	box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+	background-color: #fff;
+}
+button:active,
+.button:active {
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+	background-color: #f2f2f2;
+}
+button.primary,
+.button.primary {
+	color: rgba(255, 255, 255, .9);
+	background-color: rgb(27, 27, 27);
+}
+button.success,
+.button.success {
+	color: rgb(41, 140, 98);
+	background-color: rgb(228, 255, 225);
+}
+button.error,
+.button.error {
+	color: #782B2B;
+	background-color: rgba(233, 39, 39, 0.4);
+}
+button.warning,
+.button.warning {
+	color: #B78256;
+	background-color: rgba(255, 173, 69, 0.4);
+}
+button[disabled],
+.button.disabled {
+	opacity: .5;
+}
+button[disabled],
+.button.disabled:hover {
+	cursor: not-allowed;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+}
+button.smaller,
+.button.smaller {
+	padding: .2rem 1rem;
+    font-size: 10pt;
+}
+button.small,
+.button.small {
+    padding: .3rem 1rem;
+    font-size: 12pt;
+}
+button.big,
+.button.big {
+    padding: .5rem 1.3rem;
+    font-size: 16pt;
+}
+button.bigger,
+.button.bigger {
+    padding: .5rem 1.6rem;
+    font-size: 20pt;
+}
 
 
 /*
