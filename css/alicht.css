@@ -605,6 +605,7 @@ section > div {
 	padding: 1rem 1.9rem;
 	border-radius: 2px;
 	margin: .4rem;
+	max-width: calc(100% - .8rem);
 }
 
 /* Tile modes : Grid, Alternate. */
@@ -741,6 +742,10 @@ button.primary,
 .button.primary {
 	color: rgba(255, 255, 255, .9);
 	background-color: rgb(27, 27, 27);
+}
+button.primary:hover,
+.button.primary:hover {
+	color: #27DCE9;
 }
 button.success,
 .button.success {
