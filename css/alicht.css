@@ -268,9 +268,14 @@ header {
     position: relative;
     overflow: hidden;
 	text-align: center;
-	font-size: 13pt;
+	font-size: 12pt;
 	clear: both;
 	box-sizing: border-box;
+}
+@media screen and (min-width:750px) {
+	header {
+		font-size: 13pt;
+	}
 }
 header.cover {
     color: rgba(255, 255, 255, 0.9);
