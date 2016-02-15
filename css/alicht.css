@@ -593,6 +593,12 @@ section > div {
     	-ms-flex-flow: row wrap;
             flex-flow: row wrap;
 }
+.tile-wrapper:last-child {
+    padding-bottom: 0;
+}
+.tile-wrapper:first-child {
+    padding-top: 0;
+}
 
 /* Generic tile */
 .tile {
