@@ -431,7 +431,7 @@ section > div {
 	z-index: 2;
 }
 .side-nav.right {
-	right: 0;
+	right: .5rem;
 	margin-right: 0;
 	margin-left: 1rem;
 }
@@ -509,15 +509,17 @@ section > div {
 	}
 }
 @media screen and (max-width:649px) {
-	.side-nav {
-		position: static;
+	.side-nav,
+	.side-nav.right {
+		position: relative;
 		width: auto;
 		margin: 0 0 1.5rem;
+		right: 0;
 	}
-	.side-nav:not(.right) ~ * {
+	.side-nav:not(.right) ~ *:not(.side-nav) {
     	margin-left: 0;
 	}
-	.side-nav.right ~ * {
+	.side-nav.right ~ *:not(.side-nav) {
 		margin-right: 0;
 	}
 }
