@@ -534,6 +534,9 @@ section > div {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-flex-flow: row wrap;
+		-ms-flex-flow: row wrap;
+			flex-flow: row wrap;
 }
 .inline-nav li {
     display: inline-block;
