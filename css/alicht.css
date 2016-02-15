@@ -583,7 +583,7 @@ section > div {
  * --------
  */
 .tile-wrapper {
-    padding: 1.2rem 0;
+    padding: 0;
 	margin: 0 -2.3rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -592,12 +592,6 @@ section > div {
     -webkit-flex-flow: row wrap;
     	-ms-flex-flow: row wrap;
             flex-flow: row wrap;
-}
-.tile-wrapper:last-child {
-    padding-bottom: 0;
-}
-.tile-wrapper:first-child {
-    padding-top: 0;
 }
 
 /* Generic tile */
