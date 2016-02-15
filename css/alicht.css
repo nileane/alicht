@@ -605,6 +605,7 @@ section > div {
 	padding: 1rem 1.9rem;
 	border-radius: 2px;
 	margin: .4rem;
+	max-width: calc(100% - .8rem);
 }
 
 /* Tile modes : Grid, Alternate. */
