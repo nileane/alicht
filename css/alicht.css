@@ -37,7 +37,7 @@
 @import url('normalize.css');
 @import url('fonts/exo2/exo2.css');
 @import url('fonts/octicons/octicons.css');
-@import url('fonts/fira/fira.css');
+@import url('fonts/inconsolata/inconsolata.css');
 
 
 /*
@@ -73,10 +73,10 @@ em {
 code {
     background-color: #333;
     color: #dbdbdb;
-    padding: 2px 5px;
+    padding: .2rem .5rem;
     border-radius: 3px;
     display: inline-block;
-    font-family: "Fira Mono", monospace;
+    font-family: "Inconsolata", monospace;
     font-size: 80%;
 }
 pre {
@@ -89,7 +89,7 @@ pre {
     font-size: 80%;
     color: #dbdbdb;
 	border-radius: 3px;
-    font-family: "Fira Mono", monospace;
+    font-family: "Inconsolata", monospace;
 }
 pre code {
     background: none;
