@@ -659,7 +659,6 @@ section > div {
 .tile h2,
 .tile h3 {
     margin: .2em 0;
-    text-align: left;
 }/*
 .tile p:last-child {
     margin-bottom: 0;
