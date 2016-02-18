@@ -851,6 +851,9 @@ footer a {
 header + .alert {
     margin-top: 5em;
 }
+.tile .alert {
+    padding-left: 0;
+}
 .alert.wide {
 	display: block;
 }
