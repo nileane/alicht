@@ -4,18 +4,32 @@
     <meta charset="utf-8">
     <meta name="description" content="Alicht CSS style">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link rel="stylesheet" href="{{site.root_url}}css/alicht.css">
-    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/alicht.css">
+    <title>Alicht CSS</title>
 </head>
 <body>
 
-<header>
-    <div>
-        <a href="{{site.root_url}}"><h1 class="site-title">{{site.name}}</h1></a>
-        <!-- <a href="#"><div><img id="logo" src="{{site.root_url}}img/archost_logo_20150419_dark_flat_full_text.png" alt="Archost"></div></a> -->
-        <nav>{% include nav.html %}</nav>
-    </div>
-</header>
+<div id="topbar">
+	<div>
+	 {% unless page.home %}
+		<a href="/"><div id="head">Alicht CSS</div></a>
+	 {% endunless %}
+		<nav id="nav" class="righted">
+			<div class="mobileoff">
+				{% for link in site.menu %}
+					<a href="{{link.url}}">{{link.text}}</a>
+				{% endfor %}
+			</div>
+
+			<select class="mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
+				<option value="#" selected="selected">Menu</option>
+					{% for link in site.menu %}
+						<option value="{{link.url}}">{{link.text}}</option>
+					{% endfor %}
+			</select>
+		</nav>
+	</div>
+</div>
 
 {{ content }}
 

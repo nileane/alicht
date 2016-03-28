@@ -1,0 +1,39 @@
+---
+layout: compact
+title: "Alicht CSS Components : Forms."
+permalink: /components/forms.html
+---
+<section>
+    <h1>Forms</h1>
+    <p>Forms also use Flexboxes, just like the tile layout.<br>
+    It makes responsive designed forms easy to create and to set up.</p>
+
+    <div class="tile-wrapper">
+        <div class="tile">
+            <h3>Form with placeholders</h3>
+            <form method="post">
+                <input name="username" placeholder="Username" required="" type="text">
+                <input name="email" placeholder="Email" required="" type="email">
+                <textarea name="comment" placeholder="Type in your comment"></textarea>
+                <button type="submit">Send comment</button>
+            </form>
+        </div>
+
+        <div class="tile">
+            <h3>Form with labels</h3>
+            <form method="post">
+                <div>
+                    <span class="input-label">Username</span>
+                    <input name="username" required="" type="text">
+                </div>
+                <div>
+                    <span class="input-label">Email</span>
+                    <input name="email" required="" type="email">
+                </div>
+                <span class="input-label">Type your awesome text</span>
+                <textarea name="comment"></textarea>
+                <button type="submit">Send comment</button>
+            </form>
+        </div>
+	</div>
+</section>

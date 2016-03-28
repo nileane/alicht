@@ -11,3 +11,9 @@ markdown: kramdown
 
 gems:
   - jekyll-redirect-from
+
+menu:
+- text: Get Started
+  url: /overview.html
+- text: Fork it <span class="octicon octicon-mark-github"></span>
+  url: https://github.com/archost/alicht

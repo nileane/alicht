@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<header class="small cover lefted" style="background-image:url(/img/nonamericanhands.jpg)"></header>
+
+<div class="wrapper">
+	<nav class="side-nav">
+			<span class="small-title">v2.0-prerelease</span>
+			<ul>
+				{% for item in site.data.docmenu %}
+					<li {% if page.url == item.url %}class="active"{% endif %}><a href="{{ item.url }}">{{ item.text }}</a>
+					{% if item.submenu %}
+						<ul>
+							{% for sub in item.submenu %}
+							<li {% if page.url == sub.url %}class="active"{% endif %}><a href="{{ sub.url }}">{{ sub.text }}</a></li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+                    </li>
+				{% endfor %}
+			</ul>
+	</nav>
+	{{ content }}
+</div>
