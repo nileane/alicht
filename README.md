@@ -1,10 +1,10 @@
 # alicht
 
-[Archost](http://archost.eu) CSS framework.
+The most awesome CSS framework there is.
 
-## Contributors
+## Demo
 
-[Team Archost](TEAMARCHOST)
+__[alicht.sch.am](http://alicht.sch.am)__
 
 ## License
 
