@@ -4,7 +4,7 @@ The most awesome CSS framework there is.
 
 ## Demo
 
-__[alicht.sch.am](http://alicht.sch.am)__
+__[alicht.nildeala.fr](http://alicht.nildeala.fr)__
 
 ## License
 
