@@ -31,10 +31,10 @@
  * 0. Imports
  * ----------
  */
-@import url('normalize.css');
-@import url('fonts/exo2/exo2.css');
-@import url('fonts/octicons/octicons.css');
-@import url('fonts/inconsolata/inconsolata.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+@import url('https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700');
 
 
 /*
@@ -43,7 +43,7 @@
  */
 body {
     background: #E0E0E0;
-    font: 11pt 'Exo2', sans-serif;
+    font: 11pt "Exo 2", sans-serif;
     color: rgba(0, 0, 0, .75);
     margin: 0;
     padding: 0;
@@ -323,7 +323,7 @@ h1.home-head {
  * ---------------------
  */
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Exo2", 'Fira Mono', sans-serif;
+    font-family: "Exo 2", 'Fira Mono', sans-serif;
     font-weight: normal;
 }
 h1 {
@@ -912,5 +912,3 @@ header + .alert {
  * 11. Tables
  * ----------
  */
-
-
