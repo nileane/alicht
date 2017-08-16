@@ -47,7 +47,6 @@ body {
     color: rgba(0, 0, 0, .75);
     margin: 0;
     padding: 0;
-	box-shadow: 0 -55px #111;
 }
 @media screen and (min-width:750px) {
     body {
