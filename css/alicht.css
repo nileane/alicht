@@ -22,7 +22,7 @@
  * 8. Forms & buttons
  * 9. Footer
  * 10. Alerts
- * 11. Tables
+ * 11. Modals
  */
 
 
@@ -904,10 +904,52 @@ header + .alert {
         opacity: 1;
     }
 }
+@-webkit-keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -10%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
 
 
 
 /*
- * 11. Tables
+ * 11. Modals
  * ----------
  */
+.modal {
+    display: none;
+}
+.modal:target, .modal.active {
+    display: block;
+    animation: modal .5s 1;
+    position: fixed;
+    top: 0;
+    min-width: 300px;
+    max-height: 80vh;
+    overflow: scroll;
+    left: 50%;
+    max-width: 80%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 20px;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .2),
+        0 0 400px 500px rgba(0, 0, 0, .3);
+    background-color: #fff;
+    z-index: 99;
+}
