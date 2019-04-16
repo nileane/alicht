@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Alicht CSS style">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="css/alicht.css">
+    <title>Alicht CSS</title>
+</head>
+<body>
+
+<div id="topbar">
+	<div>
+		<div id="head">
+			Alicht
+		</div>
+		<nav id="nav" class="righted">
+			<div class="mobileoff">
+					<a href="https://github.com/Nildeala/alicht">Alicht on Github</a>
+			</div>
+
+			<select class="mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
+				<option value="#" selected="selected">Menu</option>
+					<option value="https://github.com/Nildeala/alicht">Alicht on Github</option>
+			</select>
+		</nav>
+	</div>
+</div>
+
+<header class="small cover" style="background-image:url(img/nonamericanhands.jpg)">
+</header>
+
+<div class="wrapper">
+    <section>
+        <h1 id="forms">Forms</h1>
+
+    	<h3>Simple Form</h3>
+    	<form>
+    		<input type="text" name="username" placeholder="Username" required>
+    		<input type="email" name="email" placeholder="Email" required>
+    		<textarea name="comment" placeholder="Type in your comment"></textarea>
+
+    		<button type="submit">Send comment</button>
+    	</form>
+
+    	<h3>Optional grid layout</h3>
+    	<form class="grid">
+			<label>Username</label>
+			<input type="text" name="username" required>
+
+			<span class="input-label">Email</span>
+			<input type="email" name="email" required>
+
+    		<span class="input-label">Type your awesome text</span>
+    		<textarea name="comment"></textarea>
+
+
+            <label for="male2">Male</label>
+            <input type="radio" name="gender" id="male2" value="male" checked>
+
+            <label for="female2">Female</label>
+            <input type="radio" name="gender" id="female2" value="female">
+
+            <label for="other2">Other</label>
+            <input type="radio" name="gender" id="other2" value="other">
+
+            <label for="stfu2">Stfu why are you asking</label>
+            <input type="radio" name="gender" id="stfu2" value="stfu">
+
+
+    		<button type="submit">Send comment</button>
+    	</form>
+    </section>
+</div>
+
+
+<footer>
+    <p>Copyright &copy; 2015-2019 &mdash; <a href="http://nildeala.fr">Niléane Dorffer</a></p>
+    <p><a href="https://github.com/nildeala/alicht" title="Alicht on GitHub"><span class="octicon octicon-mark-github"></span></a></p>
+</footer>
+<script src="js/alicht.js"></script>
+</body>
+</html>

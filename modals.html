@@ -16,26 +16,18 @@
 		</div>
 		<nav id="nav" class="righted">
 			<div class="mobileoff">
-					<a href="#">Qui sommes-nous ?</a>
-					<a href="#">Log In</a>
+					<a href="https://github.com/Nildeala/alicht">Alicht on Github</a>
 			</div>
 
 			<select class="mobileon" name="Menu" onchange="location = this.options[this.selectedIndex].value;">
 				<option value="#" selected="selected">Menu</option>
-					<option value="#">Qui sommes-nous ?</option>
-					<option value="#">Log In</option>
+					<option value="https://github.com/Nildeala/alicht">Alicht on Github</option>
 			</select>
 		</nav>
 	</div>
 </div>
 
 <header class="small cover" style="background-image:url(img/nonamericanhands.jpg)">
-    <!--<div>
-        <h1 class="home-head">
-        	Alicht
-        </h1>
-        <div>Pour un enseignement public, gratuit, critique et populaire.</div>
-    </div>-->
 </header>
 
 <div class="wrapper">
@@ -55,15 +47,11 @@
 
         <div class="modal" id="formmodal">
             <h3>Form</h3>
-            <form method="post">
-                <div>
-                    <span class="input-label">Username</span>
-                    <input type="text" name="username" required>
-                </div>
-                <div>
-                    <span class="input-label">Email</span>
-                    <input type="email" name="email" required>
-                </div>
+            <form>
+                <span class="input-label">Username</span>
+                <input type="text" name="username" required>
+                <span class="input-label">Email</span>
+                <input type="email" name="email" required>
                 <span class="input-label">Type your awesome text</span>
                 <textarea name="comment"></textarea>
                 <button type="submit">Send comment</button>
