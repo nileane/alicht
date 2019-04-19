@@ -682,6 +682,7 @@ input, textarea {
     margin-bottom: 0.5rem;
     border-radius: 3px;
     transition: all .2s;
+    box-sizing: border-box;
 }
 form textarea {
     background-color: #fff;
