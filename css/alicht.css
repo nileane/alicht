@@ -708,9 +708,9 @@ form textarea:focus {
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 2px #27DCE9;
 }
 
-
 form input[type="radio"] {
     margin: .8rem 0;
+    box-shadow: none;
 }
 
 @media (min-width: 400px) {
