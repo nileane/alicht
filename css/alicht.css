@@ -690,7 +690,8 @@ form textarea {
     border: 0;
 }
 form button,
-form .button {
+form .button,
+form input[type=submit] {
     padding: 0.7em;
     width: 100%;
     border: 0;
